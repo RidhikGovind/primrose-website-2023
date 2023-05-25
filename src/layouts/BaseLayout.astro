@@ -1,17 +1,19 @@
 ---
 import Header from '../components/Header.astro';
+import '../input.css';
 ---
 
-<html lang='en'>
+<html lang="en">
 	<head>
-		<meta charset='utf-8' />
-		<link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-		<meta name='viewport' content='width=device-width' />
-		<meta name='generator' content={Astro.generator} />
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
 	<body>
 		<Header />
-		<h1>Astro Homepage</h1>
+		<slot />
 	</body>
+	<script is:inline src="./assets/vendor/preline/dist/preline.js"></script>
 </html>
