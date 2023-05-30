@@ -4,7 +4,7 @@ import BannerFooterSection from '../components/BannerFooterSection.astro';
 import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 ---
 
-<BaseLayout title="Coding & Authorizations | Primrose.health">
+<BaseLayout title="Practice Platform | Primrose.health">
 	<main>
 		<div class="container md:max-w-full">
 			<!-- Hero -->
@@ -19,14 +19,12 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 						<h1
 							class="block text-4xl tracking-tighter font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
 						>
-							Coding & Authorizations
+							Practice Platform
 						</h1>
 						<p class="mt-4 text-lg text-gray-800 dark:text-gray-400">
-							Lack of coding knowledge will result in significantly higher
-							denials with procedures and surgeries. Getting prior authorization
-							for surgeries and procedures can take hours of your staff’s time.
-							We take care of coding your surgeries and get prior authorizations
-							for your tests.
+							A comprehensive platform to help you run your practice
+							efficiently. Built with an easy-to-use scheduling, billing and
+							patient portal.
 						</p>
 
 						<!-- Buttons -->
@@ -45,7 +43,7 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 					<div class="relative">
 						<img
 							class="w-full max-w-full"
-							src="/images/codingandauth-hero.png"
+							src="/images/practice-platform-hero.png"
 							alt="Image Description"
 						/>
 					</div>
@@ -55,47 +53,57 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 			</div>
 			<!-- End Hero -->
 
-			<!-- Time capsule banner start -->
 			<div class="max-w-[85rem] px-4 pt-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
 				<div
-					class="bg-[#E0DDD8] sm:p-12 py-12 px-6 grid grid-rows-2 md:gap-12 gap-6"
+					class="bg-[#E0DDD8] sm:p-16 py-12 px-6 grid grid-cols-2 md:gap-12 gap-6 items-center"
 				>
-					<div class="justify-self-end max-w-[25rem]">
+					<div class="justify-center max-w-[25rem]">
 						<h2
-							class="font-bold text-2xl tracking-tighter lg:text-3xl text-gray-800 dark:text-gray-200 mb-4"
+							class="font-bold text-2xl tracking-tighter lg:text-3xl text-gray-800 dark:text-gray-200"
 						>
-							Time is money.
+							EMR independence
 						</h2>
-						<p class="text-gray-900">
-							An office spends an average of <b>16.4 hours</b> each week in prior
-							authorizations*
-						</p>
+						<!-- Buttons -->
+						<div class="mt-4 grid gap-3 w-full sm:inline-flex">
+							<a
+								class="inline-flex justify-center items-center gap-x-3 text-center bg-teal-700 hover:bg-teal-800 border border-transparent text-sm lg:text-base text-white font-medium focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+								href="#"
+							>
+								Download Free E-Book
+							</a>
+						</div>
+						<!-- End Buttons -->
 					</div>
 
-					<h3
-						class="md:text-8xl text-7xl font-bold text-gray-800 tracking-tighter"
-					>
-						16.4 hours
-					</h3>
+					<div class="grid grid-rows-2 gap-6">
+						<p class="text-gray-900">
+							You have a favorite EMR or maybe you hate all EMRs. Choose an EMR
+							of your choice for your clinical work; Choose Trillium practice
+							platform for everything else.
+						</p>
+						<p class="text-gray-900">
+							Read our eBook on why it makes sense to separate your EMR from the
+							practice platform.
+						</p>
+					</div>
 				</div>
 			</div>
-			<!-- Time capsule banner end -->
 
 			<!-- Features -->
 			<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
 				<div class="bg-white">
 					<!-- Title -->
-					<!-- <div class="mx-auto max-w-2xl text-center pb-8">
+					<div class="mx-auto max-w-2xl text-center">
 						<h2
 							class="text-3xl lg:text-4xl text-gray-800 font-bold dark:text-gray-200 px-8 pt-8"
 						>
 							Faster appointments. <br /> More patients.
 						</h2>
-						<p class="text-center text-gray-800 dark:text-gray-200 px-8 pt-4">
+						<p class="text-center text-gray-800 dark:text-gray-200 px-8 pt-8">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
 							eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						</p>
-					</div> -->
+					</div>
 					<!-- End Title -->
 
 					<div class="grid grid-col-6 gap-12 px-4 py-8">
@@ -106,7 +114,7 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 							<div>
 								<img
 									class=""
-									src="/images/savetime.png"
+									src="/images/self-service.png"
 									alt="Image Description"
 								/>
 							</div>
@@ -119,14 +127,12 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 										<h2
 											class="font-bold text-2xl lg:text-3xl text-gray-800 dark:text-gray-200"
 										>
-											Save time
+											Built for self service
 										</h2>
 										<p class="text-gray-500">
-											According to AMA, an typical office spends an average of
-											16.4 hours each week in prior authorizations*. That is
-											costing your practice upwards of $1500 each month. Our
-											prior authorizations team will save your staff from the
-											hold times and all the administrative paperwork.
+											All schedulers are built for your internal staff. We built
+											our scheduler from the ground up for integration with your
+											website and SMS self scheduling.
 										</p>
 									</div>
 									<!-- End Title -->
@@ -143,7 +149,7 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 							<div class="md:order-last">
 								<img
 									class=""
-									src="/images/speedy-auth-processing.png"
+									src="/images/maximize-collection.png"
 									alt="Image Description"
 								/>
 							</div>
@@ -156,14 +162,13 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 										<h2
 											class="font-bold text-2xl lg:text-3xl text-gray-800 dark:text-gray-200"
 										>
-											Speedy authorization processing
+											Maximize collection
 										</h2>
 										<p class="text-gray-500">
-											We pull appointments and work them through a streamlined
-											process to verify benefits and then process prior
-											authorizations if required. Our process is built to handle
-											the exceptions and payor process variations and minimize
-											any impact to your workflow.
+											Frontdesk afraid to ask for payment? Most commercial plans
+											have high deductibles and this is the weakest area for
+											most clinics. Stop chasing patients and use our estimators
+											and prepayment tools to maximize patient collection.
 										</p>
 									</div>
 									<!-- End Title -->
@@ -179,7 +184,7 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 							<div>
 								<img
 									class=""
-									src="/images/collect-confidently.png"
+									src="/images/Drive-reputation.png"
 									alt="Image Description"
 								/>
 							</div>
@@ -192,15 +197,13 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 										<h2
 											class="font-bold text-2xl lg:text-3xl text-gray-800 dark:text-gray-200"
 										>
-											Collect confidently
+											Drive reputation
 										</h2>
 										<p class="text-gray-500">
-											Don’t leave your frontdesk guessing how much to collect.
-											Know exactly what the patient’s benefit is and collect it
-											at the time of service and avoid large patient balances.
-											We verify benefits along with the copay and outstanding
-											deductible to determine how much to collect and make the
-											information easily available through our platform.
+											We automatically send patients review requests after their
+											appointments. We typically build hundreds of Google
+											reviews in a matter of months driving up your online
+											reputation and allowing more patients.
 										</p>
 										<a href="#" class="inline-flex text-blue-700 underline"
 											>Click here to see our fees</a
@@ -220,7 +223,7 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 							<div class="md:order-last">
 								<img
 									class=""
-									src="/images/reduce-denials.png"
+									src="/images/seamless-engagement.png"
 									alt="Image Description"
 								/>
 							</div>
@@ -233,16 +236,13 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 										<h2
 											class="font-bold text-2xl lg:text-3xl text-gray-800 dark:text-gray-200"
 										>
-											Reduce denials with our coding
+											Seamless engagement
 										</h2>
 										<p class="text-gray-500">
-											Coding surgeries can be complex and done incorrectly can
-											lead to lost revenue and denials. If billing is outsourced
-											to a EMR vendor or a low cost vendor, they do not have the
-											necessary coding experts to get these claims fixed and
-											paid. Our coders are experts in specific specialties and
-											have years of experience in hospital settings and will
-											code them correctly the first time.
+											Patients expect multiple engagement options just like they
+											would with any retail business. Engage with your patients
+											through a seamless chat/sms experience from a central
+											console.
 										</p>
 									</div>
 									<!-- End Title -->
@@ -251,70 +251,6 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 							<!-- End Col -->
 						</div>
 						<!-- End Grid -->
-
-						<!-- Grid - Feature 5 -->
-						<div
-							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
-						>
-							<div>
-								<img
-									class=""
-									src="/images/built-on-technology.png"
-									alt="Image Description"
-								/>
-							</div>
-							<!-- End Col -->
-
-							<div class="mt-5 sm:mt-10 lg:mt-0">
-								<div class="space-y-6 sm:space-y-8">
-									<!-- Title -->
-									<div class="space-y-2 md:space-y-4">
-										<h2
-											class="font-bold text-2xl lg:text-3xl text-gray-800 dark:text-gray-200"
-										>
-											Built on technology
-										</h2>
-										<p class="text-gray-500">
-											Once we assembled a top-notch coding and prior auth team,
-											we set about building a custom authorization and coding
-											platform to help us work cohesively and securely. The
-											platform also allow us to track items seamlessly and
-											manage the process comprehensively. Because, at the end of
-											it all, we recognize just one denial can lead to hundreds
-											of dollars in lost revenue.
-										</p>
-									</div>
-									<!-- End Title -->
-								</div>
-							</div>
-							<!-- End Col -->
-						</div>
-						<!-- End Features Grid -->
-
-						<div
-							class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
-						>
-							<!-- Title -->
-							<div class="mx-auto max-w-2xl text-center pb-8">
-								<h2
-									class="text-3xl lg:text-4xl text-gray-800 font-bold dark:text-gray-200 px-8 pt-8"
-								>
-									The Primrose workflow
-								</h2>
-								<p
-									class="text-center text-gray-800 dark:text-gray-200 px-8 pt-4"
-								>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
-									eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								</p>
-							</div>
-							<!-- End Title -->
-
-							<div class="grid md:grid-cols-2 gap-8 grid-row-2">
-								<img src="/images/workflow-traditional-way.png" alt="" />
-								<img src="/images/workflow-primrose-way.png" alt="" />
-							</div>
-						</div>
 
 						<!-- Testimonials -->
 						<div
@@ -367,6 +303,151 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 							<!-- End Blockquote -->
 						</div>
 						<!-- End Testimonials -->
+
+						<!-- Grid - Feature 5 -->
+						<div
+							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
+						>
+							<div>
+								<img
+									class=""
+									src="/images/payment-portal.png"
+									alt="Image Description"
+								/>
+							</div>
+							<!-- End Col -->
+
+							<div class="mt-5 sm:mt-10 lg:mt-0">
+								<div class="space-y-6 sm:space-y-8">
+									<!-- Title -->
+									<div class="space-y-2 md:space-y-4">
+										<h2
+											class="font-bold text-2xl lg:text-3xl text-gray-800 dark:text-gray-200"
+										>
+											Payment portal
+										</h2>
+										<p class="text-gray-500">
+											Gone are the days when patients would call to make a
+											payment. If you do not have an option to pay online on
+											your statement, you are losing money. Send an SMS to
+											request payment.
+										</p>
+									</div>
+									<!-- End Title -->
+								</div>
+							</div>
+							<!-- End Col -->
+						</div>
+						<!-- End Features Grid -->
+
+						<!-- Grid - Feature 6 -->
+						<div
+							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
+						>
+							<div class="md:order-last">
+								<img
+									class=""
+									src="/images/web-widgets.png"
+									alt="Image Description"
+								/>
+							</div>
+							<!-- End Col -->
+
+							<div class="mt-5 sm:mt-10 lg:mt-0">
+								<div class="space-y-6 sm:space-y-8">
+									<!-- Title -->
+									<div class="space-y-2 md:space-y-4">
+										<h2
+											class="font-bold text-2xl lg:text-3xl text-gray-800 dark:text-gray-200"
+										>
+											Web widgets
+										</h2>
+										<p class="text-gray-500">
+											Integrate our web widgets for your website for FREE with
+											just 4 lines of code. Our widgets can display your Google
+											Reviews, allow patients to message online or make an
+											appointment.
+										</p>
+									</div>
+									<!-- End Title -->
+								</div>
+							</div>
+							<!-- End Col -->
+						</div>
+						<!-- End Grid -->
+
+						<!-- Grid - Feature 6 -->
+						<div
+							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
+						>
+							<div>
+								<img
+									class=""
+									src="/images/staff-registration.png"
+									alt="Image Description"
+								/>
+							</div>
+							<!-- End Col -->
+
+							<div class="mt-5 sm:mt-10 lg:mt-0">
+								<div class="space-y-6 sm:space-y-8">
+									<!-- Title -->
+									<div class="space-y-2 md:space-y-4">
+										<h2
+											class="font-bold text-2xl lg:text-3xl text-gray-800 dark:text-gray-200"
+										>
+											Zero staff registration
+										</h2>
+										<p class="text-gray-500">
+											Allow patients to complete all registration paperwork from
+											the comfort of their home. Capture their drivers license &
+											insurance card images; Get all consent forms signed; 
+											collect medical history and prepare for their visit.
+										</p>
+									</div>
+									<!-- End Title -->
+								</div>
+							</div>
+							<!-- End Col -->
+						</div>
+						<!-- End Grid -->
+
+						<!-- Grid - Feature 7 -->
+						<div
+							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
+						>
+							<div class="md:order-last">
+								<img
+									class=""
+									src="/images/remote-checkin.png"
+									alt="Image Description"
+								/>
+							</div>
+							<!-- End Col -->
+
+							<div class="mt-5 sm:mt-10 lg:mt-0">
+								<div class="space-y-6 sm:space-y-8">
+									<!-- Title -->
+									<div class="space-y-2 md:space-y-4">
+										<h2
+											class="font-bold text-2xl lg:text-3xl text-gray-800 dark:text-gray-200"
+										>
+											Remote check-inn
+										</h2>
+										<p class="text-gray-500">
+											Imagine what it would mean if patients could check-in
+											online and pay their copay and enter their HPI before they
+											even show up. Would that reduce the work for your staff
+											and elevate the experience for your patients? We believe
+											so!
+										</p>
+									</div>
+									<!-- End Title -->
+								</div>
+							</div>
+							<!-- End Col -->
+						</div>
+						<!-- End Grid -->
 					</div>
 				</div>
 			</div>

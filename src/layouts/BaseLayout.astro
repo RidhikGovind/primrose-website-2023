@@ -1,19 +1,24 @@
 ---
 import Header from '../components/Header.astro';
+
 import '../input.css';
+import '@fontsource/inter';
+
+const { title } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{title}</title>
 	</head>
 	<body>
 		<Header />
 		<slot />
 	</body>
-	<script is:inline src="./assets/vendor/preline/dist/preline.js"></script>
 </html>
+
+<script is:inline src="./node_modules/preline/dist/preline.js"></script>

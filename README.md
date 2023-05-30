@@ -24,3 +24,7 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+Checkout this Astro-Tailwind  [StackblitzSanbox] (https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics?file=src%2Fpages%2Findex.astro,src%2Flayouts%2FLayout.astro&on=stackblitz) to view more structured layouts. 
+
+Checkout this Astro-Preline [StackblitzSandbox](https://stackblitz.com/edit/preline-astro?file=package.json) for more components based examples from PrelineUI

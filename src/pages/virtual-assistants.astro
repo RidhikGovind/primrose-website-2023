@@ -1,21 +1,12 @@
 ---
-import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import BannerFooterSection from '../components/BannerFooterSection.astro';
+import ButtonOutlined from '../components/ButtonOutlined.astro';
 import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
-import '@fontsource/inter';
-import '@fontsource/inter-tight';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Virtual Assistants | Primrose.health</title>
-	</head>
-	<body>
-		<Header />
+<BaseLayout title="Virtual Assistants | Primrose.health">
+	<main>
 		<div class="container md:max-w-full">
 			<!-- Hero -->
 			<div
@@ -27,7 +18,7 @@ import '@fontsource/inter-tight';
 				>
 					<div>
 						<h1
-							class="block text-4xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
+							class="block text-4xl tracking-tighter font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
 						>
 							Virtual Assistant
 						</h1>
@@ -84,15 +75,6 @@ import '@fontsource/inter-tight';
 						<div
 							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 mt-6"
 						>
-							<div>
-								<img
-									class=""
-									src="/images/zero-dollar-startup.png"
-									alt="Image Description"
-								/>
-							</div>
-							<!-- End Col -->
-
 							<div class="mt-5 sm:mt-10 lg:mt-0">
 								<div class="space-y-6 sm:space-y-8">
 									<!-- Title -->
@@ -114,6 +96,15 @@ import '@fontsource/inter-tight';
 								</div>
 							</div>
 							<!-- End Col -->
+
+							<div>
+								<img
+									class=""
+									src="/images/zero-dollar-startup.png"
+									alt="Image Description"
+								/>
+							</div>
+							<!-- End Col -->
 						</div>
 						<!-- End Grid -->
 
@@ -121,15 +112,6 @@ import '@fontsource/inter-tight';
 						<div
 							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
 						>
-							<div>
-								<img
-									class=""
-									src="/images/linear-scaling.png"
-									alt="Image Description"
-								/>
-							</div>
-							<!-- End Col -->
-
 							<div class="mt-5 sm:mt-10 lg:mt-0">
 								<div class="space-y-6 sm:space-y-8">
 									<!-- Title -->
@@ -149,6 +131,15 @@ import '@fontsource/inter-tight';
 									<!-- End Title -->
 								</div>
 							</div>
+
+							<div>
+								<img
+									class=""
+									src="/images/linear-scaling.png"
+									alt="Image Description"
+								/>
+							</div>
+							<!-- End Col -->
 						</div>
 						<!-- End Grid -->
 
@@ -156,15 +147,6 @@ import '@fontsource/inter-tight';
 						<div
 							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
 						>
-							<div>
-								<img
-									class=""
-									src="/images/lower-costs.png"
-									alt="Image Description"
-								/>
-							</div>
-							<!-- End Col -->
-
 							<div class="mt-5 sm:mt-10 lg:mt-0">
 								<div class="space-y-6 sm:space-y-8">
 									<!-- Title -->
@@ -190,6 +172,15 @@ import '@fontsource/inter-tight';
 								</div>
 							</div>
 							<!-- End Col -->
+
+							<div>
+								<img
+									class=""
+									src="/images/lower-costs.png"
+									alt="Image Description"
+								/>
+							</div>
+							<!-- End Col -->
 						</div>
 						<!-- End Grid -->
 
@@ -197,15 +188,6 @@ import '@fontsource/inter-tight';
 						<div
 							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
 						>
-							<div>
-								<img
-									class=""
-									src="/images/management-headaches.png"
-									alt="Image Description"
-								/>
-							</div>
-							<!-- End Col -->
-
 							<div class="mt-5 sm:mt-10 lg:mt-0">
 								<div class="space-y-6 sm:space-y-8">
 									<!-- Title -->
@@ -223,6 +205,15 @@ import '@fontsource/inter-tight';
 									</div>
 									<!-- End Title -->
 								</div>
+							</div>
+							<!-- End Col -->
+
+							<div>
+								<img
+									class=""
+									src="/images/management-headaches.png"
+									alt="Image Description"
+								/>
 							</div>
 							<!-- End Col -->
 						</div>
@@ -284,15 +275,6 @@ import '@fontsource/inter-tight';
 						<div
 							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
 						>
-							<div>
-								<img
-									class=""
-									src="/images/phone-lines.png"
-									alt="Image Description"
-								/>
-							</div>
-							<!-- End Col -->
-
 							<div class="mt-5 sm:mt-10 lg:mt-0">
 								<div class="space-y-6 sm:space-y-8">
 									<!-- Title -->
@@ -312,6 +294,15 @@ import '@fontsource/inter-tight';
 								</div>
 							</div>
 							<!-- End Col -->
+
+							<div>
+								<img
+									class=""
+									src="/images/phone-lines.png"
+									alt="Image Description"
+								/>
+							</div>
+							<!-- End Col -->
 						</div>
 						<!-- End Grid -->
 
@@ -319,14 +310,6 @@ import '@fontsource/inter-tight';
 						<div
 							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
 						>
-							<div>
-								<img
-									class=""
-									src="/images/scheduling-virtualassistant.png"
-									alt="Image Description"
-								/>
-							</div>
-							<!-- End Col -->
 							<div class="mt-5 sm:mt-10 lg:mt-0">
 								<div class="space-y-6 sm:space-y-8">
 									<!-- Title -->
@@ -345,6 +328,15 @@ import '@fontsource/inter-tight';
 									</div>
 									<!-- End Title -->
 								</div>
+							</div>
+							<!-- End Col -->
+
+							<div>
+								<img
+									class=""
+									src="/images/scheduling-virtualassistant.png"
+									alt="Image Description"
+								/>
 							</div>
 							<!-- End Col -->
 						</div>
@@ -448,8 +440,6 @@ import '@fontsource/inter-tight';
 				</div>
 			</div>
 			<!-- End Features -->
-
-			
 
 			<SupportBannerWithPic />
 
@@ -786,5 +776,5 @@ import '@fontsource/inter-tight';
 
 			<BannerFooterSection />
 		</div>
-	</body>
-</html>
+	</main>
+</BaseLayout>

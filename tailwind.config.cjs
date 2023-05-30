@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-const preline = require('preline/plugin');
+const preline = require('preline/plugin.js');
 
 module.exports = {
 	content: [
