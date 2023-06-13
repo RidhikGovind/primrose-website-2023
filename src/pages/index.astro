@@ -12,7 +12,7 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 		<div class="container md:max-w-full">
 			<!-- Hero -->
 			<div
-				class="max-w-[85rem] md:max-w-[100rem] mx-auto pt-10 pb-10 px-4 sm:px-6 lg:px-8 bg-neutral-100"
+				class="max-w-[85rem] md:max-w-full mx-auto pt-10 pb-10 px-4 sm:px-6 lg:px-8 bg-neutral-100"
 			>
 				<!-- Grid -->
 				<div
@@ -75,10 +75,8 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 			<!-- End Hero -->
 
 			<!-- Testimonials -->
-			<div class="relative overflow-hidden">
-				<div
-					class="max-w-[85rem] px-4 py-12 sm:px-6 lg:px-8 lg:py-16 mx-auto bg-teal-700"
-				>
+			<div class="relative overflow-hidden bg-teal-700">
+				<div class="max-w-[85rem] px-4 py-12 sm:px-6 lg:px-8 lg:py-16 mx-auto">
 					<!-- Gradients -->
 					<div aria-hidden="true" class="flex absolute left-0 -z-[1]">
 						<div
@@ -147,278 +145,282 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 			<!-- End Testimonials -->
 
 			<!-- Features -->
-			<div
-				class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-neutral-100"
-			>
-				<div class="bg-white">
-					<!-- Title -->
-					<div class="mx-auto max-w-2xl text-center">
-						<h2
-							class="text-3xl lg:text-4xl text-gray-800 font-bold dark:text-gray-200 px-8 pt-8"
-						>
-							Built for startup clinics
-						</h2>
-						<!-- <p class='mt-3 text-left	 text-gray-800 dark:text-gray-200'>
+			<div class="bg-neutral-100">
+				<div
+					class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto "
+				>
+					<div class="bg-white">
+						<!-- Title -->
+						<div class="mx-auto max-w-2xl text-center">
+							<h2
+								class="text-3xl lg:text-4xl text-gray-800 font-bold dark:text-gray-200 px-8 pt-8"
+							>
+								Built for startup clinics
+							</h2>
+							<!-- <p class='mt-3 text-left	 text-gray-800 dark:text-gray-200'>
 					Starting a practice requires managing a lot of things in parallel.
 					And you have to run it at the lowest cost. See what sets Primrose
 					apart from any other billing company you will ever meet
 				</p> -->
-					</div>
-					<!-- End Title -->
+						</div>
+						<!-- End Title -->
 
-					<div class="grid grid-col-6 gap-12 px-6 py-8">
-						<!-- Grid - Feature 1 -->
-						<div
-							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 mt-6"
-						>
-							<div>
-								<img
-									class=""
-									src="/images/credentialing-homepage.png"
-									alt="Image Description"
-								/>
-							</div>
-							<!-- End Col -->
+						<div class="grid grid-col-6 gap-12 px-6 py-8">
+							<!-- Grid - Feature 1 -->
+							<div
+								class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32 mt-6"
+							>
+								<div>
+									<img
+										class=""
+										src="/images/credentialing-homepage.png"
+										alt="Image Description"
+									/>
+								</div>
+								<!-- End Col -->
 
-							<div class="mt-5 sm:mt-10 lg:mt-0">
-								<div class="space-y-6 sm:space-y-8">
-									<!-- Title -->
-									<div class="space-y-2 md:space-y-4">
-										<h2
-											class="font-bold text-2xl lg:text-4xl text-gray-800 dark:text-gray-200"
-										>
-											Credentialing
-										</h2>
-										<p class="text-gray-500">
-											Getting contracted with payers quickly is critical to get
-											cash flow positiver. Our credentialing experts can
-											navigate the often confusing contracting process.
-										</p>
+								<div class="mt-5 sm:mt-10 lg:mt-0">
+									<div class="space-y-6 sm:space-y-8">
+										<!-- Title -->
+										<div class="space-y-2 md:space-y-4">
+											<h2
+												class="font-bold text-2xl lg:text-4xl text-gray-800 dark:text-gray-200"
+											>
+												Credentialing
+											</h2>
+											<p class="text-gray-500">
+												Getting contracted with payers quickly is critical to
+												get cash flow positiver. Our credentialing experts can
+												navigate the often confusing contracting process.
+											</p>
 
-										<a
-											class="inline-flex items-center py-1"
-											href="/credentialing"
-										>
-											<ButtonOutlined />
-										</a>
+											<a
+												class="inline-flex items-center py-1"
+												href="/credentialing"
+											>
+												<ButtonOutlined />
+											</a>
+										</div>
+										<!-- End Title -->
 									</div>
-									<!-- End Title -->
+								</div>
+								<!-- End Col -->
+							</div>
+							<!-- End Grid -->
+
+							<!-- Grid - Feature 2 -->
+							<div
+								class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
+							>
+								<div class="md:order-last">
+									<img
+										class=""
+										src="/images/virtualassitant-homepage.png"
+										alt="Image Description"
+									/>
+								</div>
+								<!-- End Col -->
+
+								<div class="mt-5 sm:mt-10 lg:mt-0">
+									<div class="space-y-6 sm:space-y-8">
+										<!-- Title -->
+										<div class="space-y-2 md:space-y-4">
+											<h2
+												class="font-bold text-2xl lg:text-4xl text-gray-800 dark:text-gray-200"
+											>
+												Virtual Assistants
+											</h2>
+											<p class="text-gray-500">
+												Can you startup with zero staff? We take on frontdesk
+												responsibility until you are ready to hire a full time
+												employee.
+											</p>
+
+											<a
+												class="inline-flex items-center py-1"
+												href="/credentialing"
+											>
+												<ButtonOutlined />
+											</a>
+										</div>
+										<!-- End Title -->
+									</div>
 								</div>
 							</div>
-							<!-- End Col -->
-						</div>
-						<!-- End Grid -->
+							<!-- End Grid -->
 
-						<!-- Grid - Feature 2 -->
-						<div
-							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
-						>
-							<div class="md:order-last">
-								<img
-									class=""
-									src="/images/virtualassitant-homepage.png"
-									alt="Image Description"
-								/>
-							</div>
-							<!-- End Col -->
-
-							<div class="mt-5 sm:mt-10 lg:mt-0">
-								<div class="space-y-6 sm:space-y-8">
-									<!-- Title -->
-									<div class="space-y-2 md:space-y-4">
-										<h2
-											class="font-bold text-2xl lg:text-4xl text-gray-800 dark:text-gray-200"
-										>
-											Virtual Assistants
-										</h2>
-										<p class="text-gray-500">
-											Can you startup with zero staff? We take on frontdesk
-											responsibility until you are ready to hire a full time
-											employee.
-										</p>
-
-										<a
-											class="inline-flex items-center py-1"
-											href="/credentialing"
-										>
-											<ButtonOutlined />
-										</a>
-									</div>
-									<!-- End Title -->
+							<!-- Grid - Feature 3 -->
+							<div
+								class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
+							>
+								<div>
+									<img
+										class=""
+										src="/images/codingauth-homepage.png"
+										alt="Image Description"
+									/>
 								</div>
-							</div>
-						</div>
-						<!-- End Grid -->
+								<!-- End Col -->
 
-						<!-- Grid - Feature 3 -->
-						<div
-							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
-						>
-							<div>
-								<img
-									class=""
-									src="/images/codingauth-homepage.png"
-									alt="Image Description"
-								/>
-							</div>
-							<!-- End Col -->
-
-							<div class="mt-5 sm:mt-10 lg:mt-0">
-								<div class="space-y-6 sm:space-y-8">
-									<!-- Title -->
-									<div class="space-y-2 md:space-y-4">
-										<h2
-											class="font-bold text-2xl lg:text-4xl text-gray-800 dark:text-gray-200"
-										>
-											Coding & Authorizations
-										</h2>
-										<p class="text-gray-500">
-											Lack of coding knowledge will result in significantly
-											higher denials with procedures and surgeries. Getting
-											prior authorization for surgeries and procedures can take
-											hours of your staff’s time. We take care of coding your
-											surgeries and get prior authorizations for your tests.
-										</p>
-										<a
-											class="inline-flex items-center py-1"
-											href="/credentialing"
-										>
-											<ButtonOutlined />
-										</a>
+								<div class="mt-5 sm:mt-10 lg:mt-0">
+									<div class="space-y-6 sm:space-y-8">
+										<!-- Title -->
+										<div class="space-y-2 md:space-y-4">
+											<h2
+												class="font-bold text-2xl lg:text-4xl text-gray-800 dark:text-gray-200"
+											>
+												Coding & Authorizations
+											</h2>
+											<p class="text-gray-500">
+												Lack of coding knowledge will result in significantly
+												higher denials with procedures and surgeries. Getting
+												prior authorization for surgeries and procedures can
+												take hours of your staff’s time. We take care of coding
+												your surgeries and get prior authorizations for your
+												tests.
+											</p>
+											<a
+												class="inline-flex items-center py-1"
+												href="/credentialing"
+											>
+												<ButtonOutlined />
+											</a>
+										</div>
+										<!-- End Title -->
 									</div>
-									<!-- End Title -->
 								</div>
+								<!-- End Col -->
 							</div>
-							<!-- End Col -->
-						</div>
-						<!-- End Grid -->
+							<!-- End Grid -->
 
-						<!-- Grid - Feature 4 -->
-						<div
-							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
-						>
-							<div class="md:order-last">
-								<img
-									class=""
-									src="/images/practiceplatform-homepage.png"
-									alt="Image Description"
-								/>
-							</div>
-							<!-- End Col -->
+							<!-- Grid - Feature 4 -->
+							<div
+								class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
+							>
+								<div class="md:order-last">
+									<img
+										class=""
+										src="/images/practiceplatform-homepage.png"
+										alt="Image Description"
+									/>
+								</div>
+								<!-- End Col -->
 
-							<div class="mt-5 sm:mt-10 lg:mt-0">
-								<div class="space-y-6 sm:space-y-8">
-									<!-- Title -->
-									<div class="space-y-2 md:space-y-4">
-										<h2
-											class="font-bold text-2xl lg:text-4xl text-gray-800 dark:text-gray-200"
-										>
-											Practice Platform
-										</h2>
-										<p class="text-gray-500">
-											A comprehensive platform to help you run your practice
-											efficiently. Built with an easy-to-use scheduling, billing
-											and patient portal.
-										</p>
-										<a
-											class="inline-flex items-center py-1"
-											href="/credentialing"
-										>
-											<ButtonOutlined />
-										</a>
+								<div class="mt-5 sm:mt-10 lg:mt-0">
+									<div class="space-y-6 sm:space-y-8">
+										<!-- Title -->
+										<div class="space-y-2 md:space-y-4">
+											<h2
+												class="font-bold text-2xl lg:text-4xl text-gray-800 dark:text-gray-200"
+											>
+												Practice Platform
+											</h2>
+											<p class="text-gray-500">
+												A comprehensive platform to help you run your practice
+												efficiently. Built with an easy-to-use scheduling,
+												billing and patient portal.
+											</p>
+											<a
+												class="inline-flex items-center py-1"
+												href="/credentialing"
+											>
+												<ButtonOutlined />
+											</a>
+										</div>
+										<!-- End Title -->
 									</div>
-									<!-- End Title -->
 								</div>
+								<!-- End Col -->
 							</div>
-							<!-- End Col -->
-						</div>
-						<!-- End Grid -->
+							<!-- End Grid -->
 
-						<!-- Grid - Feature 5 -->
-						<div
-							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
-						>
-							<div>
-								<img
-									class=""
-									src="/images/endtoendbilling-homepage.png"
-									alt="Image Description"
-								/>
-							</div>
-							<!-- End Col -->
+							<!-- Grid - Feature 5 -->
+							<div
+								class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
+							>
+								<div>
+									<img
+										class=""
+										src="/images/endtoendbilling-homepage.png"
+										alt="Image Description"
+									/>
+								</div>
+								<!-- End Col -->
 
-							<div class="mt-5 sm:mt-10 lg:mt-0">
-								<div class="space-y-6 sm:space-y-8">
-									<!-- Title -->
-									<div class="space-y-2 md:space-y-4">
-										<h2
-											class="font-bold text-2xl lg:text-4xl text-gray-800 dark:text-gray-200"
-										>
-											End-to-end billing service
-										</h2>
-										<p class="text-gray-500">
-											Over a decade of experience in billing for multiple
-											specialties and maximizing benefits during the critical
-											contracting phase
-										</p>
-										<a
-											class="inline-flex items-center py-1"
-											href="/credentialing"
-										>
-											<ButtonOutlined />
-										</a>
+								<div class="mt-5 sm:mt-10 lg:mt-0">
+									<div class="space-y-6 sm:space-y-8">
+										<!-- Title -->
+										<div class="space-y-2 md:space-y-4">
+											<h2
+												class="font-bold text-2xl lg:text-4xl text-gray-800 dark:text-gray-200"
+											>
+												End-to-end billing service
+											</h2>
+											<p class="text-gray-500">
+												Over a decade of experience in billing for multiple
+												specialties and maximizing benefits during the critical
+												contracting phase
+											</p>
+											<a
+												class="inline-flex items-center py-1"
+												href="/credentialing"
+											>
+												<ButtonOutlined />
+											</a>
+										</div>
+										<!-- End Title -->
 									</div>
-									<!-- End Title -->
 								</div>
+								<!-- End Col -->
 							</div>
-							<!-- End Col -->
-						</div>
-						<!-- End Grid -->
+							<!-- End Grid -->
 
-						<!-- Grid - Feature 6 -->
-						<div
-							class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
-						>
-							<div class="md:order-last">
-								<img
-									class=""
-									src="/images/marketing-homepage.png"
-									alt="Image Description"
-								/>
-							</div>
-							<!-- End Col -->
-							<div class="mt-5 sm:mt-10 lg:mt-0">
-								<div class="space-y-6 sm:space-y-8">
-									<!-- Title -->
-									<div class="space-y-2 md:space-y-4">
-										<h2
-											class="font-bold text-2xl lg:text-4xl text-gray-800 dark:text-gray-200"
-										>
-											Marketing
-										</h2>
-										<p class="text-gray-500">
-											Get the basics in place to help you market at no extra
-											costs. A website, basic SEO, local business listing,
-											directory management, Google reviews and 6 months of
-											social media marketing to help you build your patient base
-											quickly.
-										</p>
-										<a
-											class="inline-flex items-center py-1"
-											href="/credentialing"
-										>
-											<ButtonOutlined />
-										</a>
-									</div>
-									<!-- End Title -->
+							<!-- Grid - Feature 6 -->
+							<div
+								class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32"
+							>
+								<div class="md:order-last">
+									<img
+										class=""
+										src="/images/marketing-homepage.png"
+										alt="Image Description"
+									/>
 								</div>
+								<!-- End Col -->
+								<div class="mt-5 sm:mt-10 lg:mt-0">
+									<div class="space-y-6 sm:space-y-8">
+										<!-- Title -->
+										<div class="space-y-2 md:space-y-4">
+											<h2
+												class="font-bold text-2xl lg:text-4xl text-gray-800 dark:text-gray-200"
+											>
+												Marketing
+											</h2>
+											<p class="text-gray-500">
+												Get the basics in place to help you market at no extra
+												costs. A website, basic SEO, local business listing,
+												directory management, Google reviews and 6 months of
+												social media marketing to help you build your patient
+												base quickly.
+											</p>
+											<a
+												class="inline-flex items-center py-1"
+												href="/credentialing"
+											>
+												<ButtonOutlined />
+											</a>
+										</div>
+										<!-- End Title -->
+									</div>
+								</div>
+								<!-- End Col -->
 							</div>
-							<!-- End Col -->
+							<!-- End Grid -->
 						</div>
-						<!-- End Grid -->
 					</div>
 				</div>
 			</div>
+
 			<!-- End Features -->
 
 			<div class="max-w-[85rem] py-10 px-8 mx-auto">
@@ -465,8 +467,9 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 			</div>
 
 			<!-- Card Blog -->
-			<div
-				class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-neutral-100"
+			<div class="bg-neutral-100">
+				<div
+				class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto "
 			>
 				<div>
 					<!-- Title -->
@@ -571,6 +574,8 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 					<!-- End Card Grid -->
 				</div>
 			</div>
+			</div>
+			
 			<!-- End Card Blog -->
 
 			<BannerFooterSection />

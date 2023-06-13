@@ -1,6 +1,45 @@
 ---
 ---
 
+<script
+	type="text/javascript"
+	src="https://assets.calendly.com/assets/external/widget.js"
+></script>
+
+<style>
+	/* ------------ CALENDLY WIDGET STYLES ------------------- */
+	.calendly-widget-overlay {
+		position: fixed;
+		display: none;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 9999;
+		cursor: pointer;
+	}
+
+	.calendly-inline-widget {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		/* display: none; */
+	}
+
+	.calendly-widget-close {
+		z-index: 999999;
+		padding: 2rem;
+		color: #fff;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+</style>
+
 <!-- CTA Banner Start -->
 <div class="border-t overflow-hidden dark:border-slate-800 bg-zinc-900">
 	<div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,7 +55,9 @@
 				<div class="mt-8 grid gap-3 sm:inline-flex">
 					<a
 						class="inline-flex justify-center items-center gap-x-3 text-center bg-white hover:bg-gray-300 border border-transparent text-sm lg:text-base text-black font-medium focus:outline-none transition py-3 px-4 dark:focus:ring-offset-gray-800"
-						href="#"
+						onclick="openCalendlyWidget()"
+						id="calendly-open-button"
+						href="#calendly"
 					>
 						Schedule a 1:1 with an expert
 						<!-- <svg
@@ -257,3 +298,47 @@
 		</div>
 	</div>
 </footer>
+
+<!-- Calendly inline widget begin -->
+<div class="calendly-widget-overlay" id="calendly-close-button">
+	<div
+		class="calendly-inline-widget"
+		style="min-width: 320px; height: 680px"
+		data-auto-load="false"
+	>
+		<h2 class="title is-size-5 calendly-widget-close">Close X</h2>
+		<script
+			type="text/javascript"
+			src="https://assets.calendly.com/assets/external/widget.js"
+		></script>
+		<script>
+			Calendly.initInlineWidget({
+				url: 'https://calendly.com/trillium-vineeth/25-min?hide_gdpr_banner=1',
+			});
+		</script>
+	</div>
+</div>
+<!-- Calendly inline widget end -->
+
+<script>
+	/* Calendly */
+
+	// function openCalendlyWidget() {
+	// 	document.querySelector('.calendly-widget-overlay').style.display = 'block';
+	// }
+
+	// function closeCalendlyWidget() {
+	// 	document.querySelector('.calendly-widget-overlay').style.display = 'none';
+	// }
+
+	const calendlyOpenButton = document.getElementById('calendly-open-button');
+
+	const calendlyCloseButton = document.getElementById('calendly-close-button');
+
+	calendlyOpenButton.addEventListener('click', () => {
+		document.querySelector('.calendly-widget-overlay').style.display = 'block';
+	});
+	calendlyCloseButton.addEventListener('click', () => {
+		document.querySelector('.calendly-widget-overlay').style.display = 'none';
+	});
+</script>
