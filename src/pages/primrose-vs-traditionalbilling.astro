@@ -2,10 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BannerFooterSection from '../components/BannerFooterSection.astro';
 import SupportBannerWithList from '../components/SupportBannerWithList.astro';
-import ButtonOutlined from '../components/ButtonOutlined.astro';
 ---
 
-<BaseLayout title="About us | Primrose.health">
+<style>
+	td {
+		vertical-align: top;
+	}
+</style>
+
+<BaseLayout title="Primrose Vs Traditional Billing | Primrose.health">
 	<main>
 		<div class="container md:max-w-full">
 			<div class="relative">
@@ -13,408 +18,4370 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 
 				<!-- Hero -->
 				<div class="relative overflow-hidden">
-					<div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+					<div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
 						<!-- Title -->
-						<div class="mt-5 max-w-3xl text-center mx-auto">
+						<div class="mt-10 max-w-3xl text-center mx-auto">
 							<h1 class="font-bold text-lg text-teal-700 my-4">
-								Why behind Primrose
+								Primrose Vs Traditional Billing
 							</h1>
 							<h2
 								class="block font-bold text-gray-800 tracking-tighter text-4xl md:text-5xl lg:text-6xl dark:text-gray-200"
 							>
-								We help medical practices adapt to the digital era
+								Modern. Improved. <br /> Elegant way of billing.
 							</h2>
+							<p class="mt-6 text-xl text-gray-800 dark:text-gray-400">
+								Are you relying on your colleagues and friends to tell you their
+								favorite billing company? What if we were to lay out the facts
+								so you can make the right decision for your practice?
+							</p>
 						</div>
 						<!-- End Title -->
 					</div>
 				</div>
 				<!-- End Hero -->
 
-				<SupportBannerWithList />
+				<!-- Table Section -->
+				<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+					<div class="w-10/12 m-auto">
+						<!-- Card -->
+						<div class="flex flex-col">
+							<div class="-m-1.5 overflow-x-auto">
+								<div class="p-1.5 min-w-full inline-block align-middle">
+									<div class="hs-accordion-group grid gap-6">
+										<!-- Accordion Start - Billing service -->
+										<div
+											id="hs-heading-one"
+											class="hs-accordion active bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden dark:bg-slate-900 dark:border-gray-700"
+										>
+											<button
+												type="button"
+												class="hs-collapse-toggle py-4 px-6 w-full flex items-center gap-2 font-semibold text-gray-800 dark:text-gray-200"
+												id="hs-basic-collapse-one"
+												data-hs-collapse="#hs-as-table-collapse-one"
+											>
+												<svg
+													class="hs-collapse-open:rotate-90 w-2.5 h-2.5"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M4.50598 2L10.1524 7.64645C10.3477 7.84171 10.3477 8.15829 10.1524 8.35355L4.50598 14"
+														stroke="currentColor"
+														stroke-width="2"
+														stroke-linecap="round"></path>
+												</svg>
+												<h2
+													class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+												>
+													Billing Service
+												</h2>
+											</button>
+											<!-- Sub item 1  -->
+											<div
+												id="hs-as-table-collapse-one"
+												class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+												aria-labelledby="hs-basic-collapse"
+											>
+												<h2
+													class="py-6 px-8 text-lg font-semibold text-gray-700 dark:text-gray-200"
+												>
+													Basic Billing functions
+												</h2>
+												<div class="pb-4 px-6">
+													<!-- Table -->
+													<table
+														class="min-w-full divide-y divide-gray-200 dark:divide-gray-700"
+													>
+														<thead class="bg-gray-50 dark:bg-slate-900">
+															<tr>
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			Area
+																		</span>
+																	</div>
+																</th>
 
-				<!-- FAQ -->
-				<div class="max-w-[85rem] px-4 pb-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-					<!-- Title -->
-					<div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-						<h2
-							class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
-						>
-							Your questions, answered
-						</h2>
-						<p class="mt-1 text-gray-600 dark:text-gray-400">
-							Answers to the most frequently asked questions.
-						</p>
-					</div>
-					<!-- End Title -->
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			EMR Vendors
+																		</span>
+																	</div>
+																</th>
 
-					<div class="max-w-2xl mx-auto">
-						<!-- Accordion -->
-						<div class="hs-accordion-group">
-							<div
-								class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05] active"
-								id="hs-basic-with-title-and-arrow-stretched-heading-one"
-							>
-								<button
-									class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
-									aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one"
-								>
-									Do copay/deductible that we collect from patients count in
-									collections?
-									<svg
-										class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"></path>
-									</svg>
-									<svg
-										class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"></path>
-									</svg>
-								</button>
-								<div
-									id="hs-basic-with-title-and-arrow-stretched-collapse-one"
-									class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
-									aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one"
-								>
-									<p class="text-gray-800 dark:text-gray-200">
-										Yes, we include all revenue from services, including patient
-										collections, whether you collect it or we collect it
-									</p>
-								</div>
-							</div>
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			Primrose
+																		</span>
+																	</div>
+																</th>
 
-							<div
-								class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
-								id="hs-basic-with-title-and-arrow-stretched-heading-two"
-							>
-								<button
-									class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
-									aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two"
-								>
-									Do you exclude the costs of expensive medications/infusions?
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			Advantage
+																		</span>
+																	</div>
+																</th>
+															</tr>
+														</thead>
 
-									<svg
-										class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"></path>
-									</svg>
-									<svg
-										class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"></path>
-									</svg>
-								</button>
-								<div
-									id="hs-basic-with-title-and-arrow-stretched-collapse-two"
-									class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-									aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
-								>
-									<p class="text-gray-800 dark:text-gray-200">
-										Yes, we give credit towards certain expensive
-										medications/infusions based on the actual cost (invoice
-										needed). Please check with us on your specific situation.
-									</p>
-								</div>
-							</div>
+														<tbody
+															class="divide-y divide-gray-200 dark:divide-gray-700"
+														>
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Office Claims</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Create claims based on defined
+																				standards and following payer
+																				specifications.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Create claims based on defined
+																				standards and following payer
+																				specifications.</span
+																			>
+																		</div>
+																	</a>
+																</td>
 
-							<div
-								class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
-								id="hs-basic-with-title-and-arrow-stretched-heading-three"
-							>
-								<button
-									class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
-									aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three"
-								>
-									Will you do our prior authorizations?
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-[#ffe8d6] text-grey-800 dark:bg-green-900 dark:text-green-200"
+																			>
+																				Neutral
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
 
-									<svg
-										class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"></path>
-									</svg>
-									<svg
-										class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"></path>
-									</svg>
-								</button>
-								<div
-									id="hs-basic-with-title-and-arrow-stretched-collapse-three"
-									class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-									aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-three"
-								>
-									<p class="text-gray-800 dark:text-gray-200">
-										Yes, we do prior authorizations for all tests, procedures &
-										surgeries as a part of our premium service; If you need
-										prior authorizations done with a basic plan, see Cypress
-										plans for a support team that can get your tasks done at a
-										fraction of the cost of employing on-premise staff.
-									</p>
-								</div>
-							</div>
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Filing
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Create and file claims to insurance
+																				companies electronically or on paper.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Create and file claims to insurance
+																				companies electronically or on paper.</span
+																			>
+																		</div>
+																	</a>
+																</td>
 
-							<div
-								class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
-								id="hs-basic-with-title-and-arrow-stretched-heading-four"
-							>
-								<button
-									class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
-									aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-four"
-								>
-									How often do you invoice?
-									<svg
-										class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"></path>
-									</svg>
-									<svg
-										class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"></path>
-									</svg>
-								</button>
-								<div
-									id="hs-basic-with-title-and-arrow-stretched-collapse-four"
-									class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-									aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-four"
-								>
-									<p class="text-gray-800 dark:text-gray-200">
-										We raise our invoice on a monthly cycle
-									</p>
-								</div>
-							</div>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-[#ffe8d6] text-grey-800 dark:bg-green-900 dark:text-green-200"
+																			>
+																				Neutral
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
 
-							<div
-								class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
-								id="hs-basic-with-title-and-arrow-stretched-heading-five"
-							>
-								<button
-									class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
-									aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-five"
-								>
-									What forms of payment do you accept?
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Remit Posting
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Post EOBs and ERAs from insurance
+																				companies.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Post EOBs and ERAs from insurance
+																				companies.</span
+																			>
+																		</div>
+																	</a>
+																</td>
 
-									<svg
-										class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"></path>
-									</svg>
-									<svg
-										class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"></path>
-									</svg>
-								</button>
-								<div
-									id="hs-basic-with-title-and-arrow-stretched-collapse-five"
-									class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-									aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-five"
-								>
-									<p class="text-gray-800 dark:text-gray-200">
-										We obtain your prior consent and process all payments as ACH
-										from your bank account.
-									</p>
-								</div>
-							</div>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-[#ffe8d6] text-grey-800 dark:bg-green-900 dark:text-green-200"
+																			>
+																				Neutral
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
 
-							<div
-								class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
-								id="hs-basic-with-title-and-arrow-stretched-heading-six"
-							>
-								<button
-									class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
-									aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-six"
-								>
-									Can I pay using a credit card?
-									<svg
-										class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"></path>
-									</svg>
-									<svg
-										class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"></path>
-									</svg>
-								</button>
-								<div
-									id="hs-basic-with-title-and-arrow-stretched-collapse-six"
-									class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-									aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-six"
-								>
-									<p class="text-gray-800 dark:text-gray-200">
-										No, we don’t accept credit card payments to keep processing
-										costs down.
-									</p>
-								</div>
-							</div>
-							<div
-								class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
-								id="hs-basic-with-title-and-arrow-stretched-heading-six"
-							>
-								<button
-									class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
-									aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-six"
-								>
-									What do I do if I have a question about my invoice?
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Unpaid claims
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Call or trace claims missing remits
+																				from insurance companies.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Call or trace claims missing remits
+																				from insurance companies.</span
+																			>
+																		</div>
+																	</a>
+																</td>
 
-									<svg
-										class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"></path>
-									</svg>
-									<svg
-										class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
-											stroke="currentColor"
-											stroke-width="2"
-											stroke-linecap="round"></path>
-									</svg>
-								</button>
-								<div
-									id="hs-basic-with-title-and-arrow-stretched-collapse-six"
-									class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-									aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-six"
-								>
-									<p class="text-gray-800 dark:text-gray-200">
-										You would reach out to your account manager or open a
-										ticket. We will charge your account until any open questions
-										are resolved.
-									</p>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-[#ffe8d6] text-grey-800 dark:bg-green-900 dark:text-green-200"
+																			>
+																				Neutral
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Statements
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Patient statements are typically
+																				included at no additional cost</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Patient statements are typically
+																				included at no additional cost ¹</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-[#ffe8d6] text-grey-800 dark:bg-green-900 dark:text-green-200"
+																			>
+																				Neutral
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Credentialing
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Maybe</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies will do credentialing
+																				for a nominal cost. Check out actual
+																				fees</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Maybe</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>We absorb the cost of credentialing but
+																				it requires a 2-year commitment to
+																				spread our costs.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-[#ffe8d6] text-grey-800 dark:bg-green-900 dark:text-green-200"
+																			>
+																				Neutral
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Check depositing
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Maybe</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies typically deposit
+																				your check saving you trips to your
+																				bank.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Primrose deposits checks saving you
+																				trips to your bank ¹</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-[#ffe8d6] text-grey-800 dark:bg-green-900 dark:text-green-200"
+																			>
+																				Neutral
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Patient calls
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Billing Services</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies typically handle all
+																				incoming patient calls with questions on
+																				balance and take payments over the
+																				phone.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Billing Services</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing service companies focus on
+																				billing and maximizing revenue for
+																				clients.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-[#ffe8d6] text-grey-800 dark:bg-green-900 dark:text-green-200"
+																			>
+																				Neutral
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Mail processing
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies typically receive and
+																				process all incoming mail, including
+																				EOBS. .</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>We set up a dropbox to receive and
+																				process all incoming mail including
+																				EOBS. ¹</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-[#ffe8d6] text-grey-800 dark:bg-green-900 dark:text-green-200"
+																			>
+																				Neutral
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Startup fees
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Maybe</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Some billing companies have set up
+																				fees. Find out ahead of time</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Primrose does not have startup fees.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Lockin period
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Maybe</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies typically require a
+																				2-year commitment.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Primrose does not require a commitment.
+																				Due to the additional effort involved
+																				with startup clinics, we do require a
+																				2-year commitment if you want subsidized
+																				prices.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Appeals
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>All-in-One</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies typically assign a
+																				staff to a clinic and they get good with
+																				the appeals over time.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Specialized</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Primrose has a dedicated AR team that
+																				specializes in its own domain and gains
+																				expertise in appeals. ¹
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Continuity
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Individual</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies typically assign an
+																				individual. When that staff leaves,
+																				practices often themselves in a crisis.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Teams</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Primrose uses a team-based approach
+																				with cross-trained staff; if one staff
+																				leaves, it has no impact on the overall
+																				performance
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Revenue
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Limited-to-No impact</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies tend to follow
+																				fundamental billing and focus on
+																				collecting revenue.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>High impact</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Over the years, we have developed
+																				multiple strategies to maximize your
+																				revenue ¹
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Transparency
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Minimal</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Typically billing companies provide a
+																				printed monthly report with no way for
+																				the practice to review anything
+																				themselves</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>High</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>We pride in being transparent and you
+																				get real-time access to view reports
+																				through Dashboard or mobile app
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Scrubber Validation
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Basic</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies lack the ability to
+																				update rules in their software and are
+																				stuck with the old set of rules.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Primrose constantly updates our
+																				scrubber with new payor edits to reduce
+																				denials.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Prior Auth
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies require your office
+																				staff to get prior authorizations</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>We get prior authorization for tests,
+																				procedures and surgeries. Your savings
+																				are significant as our staff takes up
+																				the workload ¹
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Coding
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Maybe</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Most billing companies do not coders on
+																				staff and this leads to lost revenue and
+																				audits when physician codes complex
+																				surgery or procedure claims</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>We have experienced specialty coders
+																				for all hospital procedures and
+																				surgeries. ¹
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Eliminate scans
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>You or your staff will need to scan and
+																				email papers to billing companies
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>You can scan and upload documents
+																				through our software
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Bank reconciliation
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Few missing checks could result in
+																				thousands of dollars in lost revenue</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>We reconcile bank statements with our
+																				records and track any missing payments¹
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Facility facesheets
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>You or your staff will need to print
+																				and mail them to the billing company.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Our charge capture app allows you to
+																				take a picture of the facesheet and our
+																				team enters the data ¹
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Balance reminders
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Your staff will need to manually call
+																				patients to remind them of their
+																				balance.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>We can turn on balance reminder calls
+																				to remind your patients of their balance
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Dunning letters
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Your staff will need to manually create
+																				and send out dunning letters if their
+																				balance is seriously past due.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>We can turn on the dunning sequence for
+																				patients whose balances are past due.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Facility facesheets
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>You or your staff will need to print
+																				and mail them to the billing company.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Our charge capture app allows you to
+																				take a picture of the facesheet and our
+																				team enters the data ¹
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- End Table -->
+												</div>
+											</div>
+											<div class="p-4 flex flex-col">
+												<p
+													class="py-2 text-left text-gray-600 dark:text-gray-500 block"
+												>
+													¹ - feature is available only in our Premium &
+													Enterprise plans. See our plans here
+												</p>
+											</div>
+										</div>
+										<!-- End Accordion -->
+
+										<!-- Accordion Start - Core Software -->
+										<div
+											id="hs-heading-two"
+											class="hs-accordion bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden dark:bg-slate-900 dark:border-gray-700"
+										>
+											<button
+												type="button"
+												class="hs-collapse-toggle py-4 px-6 w-full flex items-center gap-2 font-semibold text-gray-800 dark:text-gray-200"
+												id="hs-basic-collapse-two"
+												data-hs-collapse="#hs-as-table-collapse-two"
+											>
+												<svg
+													class="hs-collapse-open:rotate-90 w-2.5 h-2.5"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M4.50598 2L10.1524 7.64645C10.3477 7.84171 10.3477 8.15829 10.1524 8.35355L4.50598 14"
+														stroke="currentColor"
+														stroke-width="2"
+														stroke-linecap="round"></path>
+												</svg>
+												<h2
+													class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+												>
+													Core Software
+												</h2>
+											</button>
+											<!-- Sub item 1  -->
+											<div
+												id="hs-as-table-collapse-two"
+												class="hs-collapse w-full overflow-hidden transition-[height] duration-300"
+												aria-labelledby="hs-basic-collapse"
+											>
+												<h2
+													class="py-4 px-8 text-lg font-semibold text-gray-700 dark:text-gray-200"
+												>
+													Basic Billing functions
+												</h2>
+												<div class="pb-4 px-6">
+													<!-- Table -->
+													<table
+														class="min-w-full divide-y divide-gray-200 dark:divide-gray-700"
+													>
+														<thead class="bg-gray-50 dark:bg-slate-900">
+															<tr>
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			Area
+																		</span>
+																	</div>
+																</th>
+
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			EMR Vendors
+																		</span>
+																	</div>
+																</th>
+
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			Primrose
+																		</span>
+																	</div>
+																</th>
+
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			Advantage
+																		</span>
+																	</div>
+																</th>
+															</tr>
+														</thead>
+
+														<tbody
+															class="divide-y divide-gray-200 dark:divide-gray-700"
+														>
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>EMR
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>You pick the EMR software of your
+																				choice.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>You pick the EMR software of your
+																				choice.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-neutral-200 text-grey-800 dark:bg-green-900 dark:text-green-200"
+																			>
+																				EMR vendors
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Portal
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Your EMR vendor will provide a patient
+																				portal that ties into their EMR.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Your EMR vendor will provide a patient
+																				portal that ties into their EMR. We use
+																				other ways to SMS & calls to communicate
+																				with your patients.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-neutral-200 text-grey-800 dark:bg-green-900 dark:text-green-200"
+																			>
+																				EMR vendors
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Scheduler
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>You would pick your own EMR scheduler
+																				software; but they lack features that
+																				practices need to succeed in the current
+																				digital environment.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Primrose scheduler has a lot of patient
+																				collaboration built in to reduce your
+																				staffing costs.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Billing
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies use off-the-shelf
+																				software products which lack
+																				revenue-maximizing features.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Primrose perfected their billing
+																				software over the 15 years to maximize
+																				your revenue. Billing software is
+																				bundled into billing service</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Dashboard
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies provide basic
+																				reporting and lack transparency.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Our dashboard is built to get
+																				practice-wide metrics and help manage
+																				your practice. It has specific reports,
+																				graphs and views to understand how your
+																				services are performing. You can also
+																				easily export data for specific
+																				analysis.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Mobile app
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies do not offer an app.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Our mobile app is fast and efficient.
+																				Reporting module allows providers to
+																				monitor their revenue. You can review
+																				any patient history using that module.
+																				Rounding module is built for
+																				facility-based providers to capture
+																				charges.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- End Table -->
+												</div>
+											</div>
+										</div>
+										<!-- End Accordion -->
+
+										<!-- Accordion Start - Previsit Services -->
+										<div
+											id="hs-heading-three"
+											class="hs-accordion bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden dark:bg-slate-900 dark:border-gray-700"
+										>
+											<button
+												type="button"
+												class="hs-collapse-toggle py-4 px-6 w-full flex items-center gap-2 font-semibold text-gray-800 dark:text-gray-200"
+												id="hs-basic-collapse-three"
+												data-hs-collapse="#hs-as-table-collapse-three"
+											>
+												<svg
+													class="hs-collapse-open:rotate-90 w-2.5 h-2.5"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M4.50598 2L10.1524 7.64645C10.3477 7.84171 10.3477 8.15829 10.1524 8.35355L4.50598 14"
+														stroke="currentColor"
+														stroke-width="2"
+														stroke-linecap="round"></path>
+												</svg>
+												<h2
+													class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+												>
+													Previsit Services
+												</h2>
+											</button>
+											<!-- Sub item 1  -->
+											<div
+												id="hs-as-table-collapse-three"
+												class="hs-collapse w-full overflow-hidden transition-[height] duration-300"
+												aria-labelledby="hs-basic-collapse"
+											>
+												<div class="pb-4 px-6">
+													<!-- Table -->
+													<table
+														class="min-w-full divide-y divide-gray-200 dark:divide-gray-700"
+													>
+														<thead class="bg-gray-50 dark:bg-slate-900">
+															<tr>
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			Area
+																		</span>
+																	</div>
+																</th>
+
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			EMR Vendors
+																		</span>
+																	</div>
+																</th>
+
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			Primrose
+																		</span>
+																	</div>
+																</th>
+
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			Advantage
+																		</span>
+																	</div>
+																</th>
+															</tr>
+														</thead>
+
+														<tbody
+															class="divide-y divide-gray-200 dark:divide-gray-700"
+														>
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Reminders
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Scope of billing companies exclude
+																				pre-visit services</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Built-in feature; Default with all
+																				plans; no additional fee
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Eligibility
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Maybe</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Scope of billing companies exclude
+																				pre-visit services</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Default in Premium & Enterprise plan at
+																				no additional fee</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Estimation
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Scope of billing companies exclude
+																				pre-visit services. Your frontdesk staff
+																				does not know or is reluctant to collect
+																				money upfront. Increased high deductible
+																				plans result in thousands of dollars
+																				being lost.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>We estimate what the patient will owe
+																				at the time of the visit giving the
+																				frontdesk staff the confidence to
+																				collect. Fees apply*</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Checkin
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Scope of billing companies exclude
+																				pre-visit services.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Our check-in feature allows patients to
+																				check-in the day before, review
+																				insurance. This eliminates the check-in
+																				process at the office.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Collect copays
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Scope of billing companies exclude
+																				pre-visit services.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>As a part of the check-in we collect
+																				copays and deductibles. Combining
+																				Estimation significantly improves your
+																				upfront collection for tests and
+																				procedures.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Self service
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Limited</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Scope of billing companies exclude
+																				pre-visit & self-service options.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Along with reminders, we also allow
+																				patients to manage their own
+																				appointments.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Messaging
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Limited</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Scope of billing companies exclude
+																				pre-visit & messaging services.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>SMS-based</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Our system allows you to message
+																				patients, send documents & images
+																				securely</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Prior Auth
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Scope of billing companies exclude
+																				pre-visit services.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>We get prior authorization for tests,
+																				procedures and surgeries. Your savings
+																				will be significant as our staff takes
+																				up the workload ¹y</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Reviews
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Scope of billing companies exclude
+																				pre-visit & review services.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>We remind patients to leave a reminder
+																				after their appointment to dramatically
+																				increase your Google reviews</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- End Table -->
+												</div>
+											</div>
+
+											<div class="p-4 flex flex-col">
+												<p
+													class="py-2 text-left text-gray-600 dark:text-gray-500 block"
+												>
+													¹ - feature is available only in our Premium &
+													Enterprise plans. See our plans here
+												</p>
+											</div>
+										</div>
+										<!-- End Accordion -->
+
+										<!-- Accordion Start - Setup & Support -->
+										<div
+											id="hs-heading-four"
+											class="hs-accordion bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden dark:bg-slate-900 dark:border-gray-700"
+										>
+											<button
+												type="button"
+												class="hs-collapse-toggle py-4 px-6 w-full flex items-center gap-2 font-semibold text-gray-800 dark:text-gray-200"
+												id="hs-basic-collapse-four"
+												data-hs-collapse="#hs-as-table-collapse-four"
+											>
+												<svg
+													class="hs-collapse-open:rotate-90 w-2.5 h-2.5"
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M4.50598 2L10.1524 7.64645C10.3477 7.84171 10.3477 8.15829 10.1524 8.35355L4.50598 14"
+														stroke="currentColor"
+														stroke-width="2"
+														stroke-linecap="round"></path>
+												</svg>
+												<h2
+													class="text-xl font-semibold text-gray-800 dark:text-gray-200"
+												>
+													Setup & Support
+												</h2>
+											</button>
+											<!-- Sub item 1  -->
+											<div
+												id="hs-as-table-collapse-four"
+												class="hs-collapse w-full overflow-hidden transition-[height] duration-300"
+												aria-labelledby="hs-basic-collapse"
+											>
+												<div class="pb-4 px-6">
+													<!-- Table -->
+													<table
+														class="min-w-full divide-y divide-gray-200 dark:divide-gray-700"
+													>
+														<thead class="bg-gray-50 dark:bg-slate-900">
+															<tr>
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			Area
+																		</span>
+																	</div>
+																</th>
+
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			EMR Vendors
+																		</span>
+																	</div>
+																</th>
+
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			Primrose
+																		</span>
+																	</div>
+																</th>
+
+																<th scope="col" class="px-6 py-3 text-left">
+																	<div class="flex items-center gap-x-2">
+																		<span
+																			class="text-xs font-semibold uppercase tracking-wide text-gray-800 dark:text-gray-200"
+																		>
+																			Advantage
+																		</span>
+																	</div>
+																</th>
+															</tr>
+														</thead>
+
+														<tbody
+															class="divide-y divide-gray-200 dark:divide-gray-700"
+														>
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Support
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Varies</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies have different
+																				support models based on their size and
+																				business model.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Account Management</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>We assign an account manager in our
+																				Premium & Enterprise plans who is
+																				knowledgeable about your account. We
+																				also have an Essentials plan with a
+																				regular customer service model to reduce
+																				costs for smaller practices.
+																			</span>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Training
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies typically do not
+																				allow you to access their software and
+																				hence provide no training</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Primrose trains on our platform so that
+																				your is familiar with our practice
+																				management platform</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-neutral-100 dark:bg-green-900 dark:text-green-200"
+																			>
+																				Neutral
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Implementation
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Transitioning billing can be tricky,
+																				and your experience will vary
+																				significantly based on the billing
+																				company</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Primrose has a proven implementation
+																				process, tracked over the first 6 months
+																				to ensure that there is no gap in
+																				revenue³</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-neutral-100 dark:bg-green-900 dark:text-green-200"
+																			>
+																				Neutral
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>EDI
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing company will set up electronic
+																				transactions with insurance companies</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Primrose sets up & manages all
+																				electronic transactions</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-neutral-100 dark:bg-green-900 dark:text-green-200"
+																			>
+																				Neutral
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Old AR
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Varies</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies differ in their
+																				policy with Old A/R. Some will take on
+																				old A/R while many won't. Check with
+																				your billing company</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Our team loads and works unpaid
+																				insurance receivables.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Remit Address
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies typically change the
+																				remit address so remits go to them.
+																				Check with your billing company.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>We change remit address so that remits
+																				come to our processing location ¹</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Turn around
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Fast resolution</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>You are assigned a biller and typically
+																				that staff can quickly resolve open
+																				issues</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Fast resolution</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Primrose premium plans assign account
+																				managers that take cross functional team
+																				support to resolve issues quickly</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+
+															<tr
+																class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800"
+															>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="text-grey-800 dark:text-blue-500"
+																				>Custom Reports
+																			</span>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>No</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Billing companies do not have the
+																				ability to generate custom reports</span
+																			>
+																		</div>
+																	</a>
+																</td>
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="font-bold text-gray-900 dark:text-gray-400 block"
+																				>Yes</span
+																			>
+																			<span
+																				class="text-sm text-gray-600 dark:text-gray-400"
+																				>Primrose allows you to export data
+																				easily from our practice management
+																				software. We support custom report
+																				generation with our premium plans. See
+																				details here.</span
+																			>
+																		</div>
+																	</a>
+																</td>
+
+																<td class="h-px w-[500px]">
+																	<a
+																		class="block"
+																		href="javascript:;"
+																		data-hs-overlay="#hs-ai-invoice-modal"
+																	>
+																		<div class="px-6 py-2">
+																			<span
+																				class="inline-flex items-center gap-1.5 py-0.5 px-2 rounded-full font-medium bg-teal-700 text-white dark:bg-green-900 dark:text-green-200"
+																			>
+																				Primrose
+																			</span>
+																		</div>
+																	</a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- End Table -->
+												</div>
+											</div>
+											<div class="p-4 flex flex-col">
+												<p
+													class="py-2 text-left text-gray-600 dark:text-gray-500 block"
+												>
+													¹ - feature is available only in our Premium &
+													Enterprise plans. See our plans here
+												</p>
+												<p
+													class="py-2 text-left text-gray-600 dark:text-gray-500 block"
+												>
+													³ - Assumes that Primrose gets sufficient lead time to
+													transition billing service
+												</p>
+											</div>
+										</div>
+										<!-- End Accordion -->
+									</div>
 								</div>
 							</div>
 						</div>
-						<!-- End Accordion -->
 					</div>
+					<!-- End Card -->
 				</div>
-				<!-- End FAQ -->
-
-				<BannerFooterSection />
 			</div>
+			<!-- End Table Section -->
+
+			<SupportBannerWithList />
+
+			<!-- FAQ -->
+			<div class="max-w-[85rem] px-4 pb-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+				<!-- Title -->
+				<div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+					<h2
+						class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
+					>
+						Your questions, answered
+					</h2>
+					<p class="mt-1 text-gray-600 dark:text-gray-400">
+						Answers to the most frequently asked questions.
+					</p>
+				</div>
+				<!-- End Title -->
+
+				<div class="max-w-2xl mx-auto">
+					<!-- Accordion -->
+					<div class="hs-accordion-group">
+						<div
+							class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05] active"
+							id="hs-basic-with-title-and-arrow-stretched-heading-one"
+						>
+							<button
+								class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
+								aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one"
+							>
+								Do copay/deductible that we collect from patients count in
+								collections?
+								<svg
+									class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+								<svg
+									class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+							</button>
+							<div
+								id="hs-basic-with-title-and-arrow-stretched-collapse-one"
+								class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+								aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one"
+							>
+								<p class="text-gray-800 dark:text-gray-200">
+									Yes, we include all revenue from services, including patient
+									collections, whether you collect it or we collect it
+								</p>
+							</div>
+						</div>
+
+						<div
+							class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
+							id="hs-basic-with-title-and-arrow-stretched-heading-two"
+						>
+							<button
+								class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
+								aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two"
+							>
+								Do you exclude the costs of expensive medications/infusions?
+
+								<svg
+									class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+								<svg
+									class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+							</button>
+							<div
+								id="hs-basic-with-title-and-arrow-stretched-collapse-two"
+								class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+								aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
+							>
+								<p class="text-gray-800 dark:text-gray-200">
+									Yes, we give credit towards certain expensive
+									medications/infusions based on the actual cost (invoice
+									needed). Please check with us on your specific situation.
+								</p>
+							</div>
+						</div>
+
+						<div
+							class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
+							id="hs-basic-with-title-and-arrow-stretched-heading-three"
+						>
+							<button
+								class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
+								aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three"
+							>
+								Will you do our prior authorizations?
+
+								<svg
+									class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+								<svg
+									class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+							</button>
+							<div
+								id="hs-basic-with-title-and-arrow-stretched-collapse-three"
+								class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+								aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-three"
+							>
+								<p class="text-gray-800 dark:text-gray-200">
+									Yes, we do prior authorizations for all tests, procedures &
+									surgeries as a part of our premium service; If you need prior
+									authorizations done with a basic plan, see Cypress plans for a
+									support team that can get your tasks done at a fraction of the
+									cost of employing on-premise staff.
+								</p>
+							</div>
+						</div>
+
+						<div
+							class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
+							id="hs-basic-with-title-and-arrow-stretched-heading-four"
+						>
+							<button
+								class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
+								aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-four"
+							>
+								How often do you invoice?
+								<svg
+									class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+								<svg
+									class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+							</button>
+							<div
+								id="hs-basic-with-title-and-arrow-stretched-collapse-four"
+								class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+								aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-four"
+							>
+								<p class="text-gray-800 dark:text-gray-200">
+									We raise our invoice on a monthly cycle
+								</p>
+							</div>
+						</div>
+
+						<div
+							class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
+							id="hs-basic-with-title-and-arrow-stretched-heading-five"
+						>
+							<button
+								class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
+								aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-five"
+							>
+								What forms of payment do you accept?
+
+								<svg
+									class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+								<svg
+									class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+							</button>
+							<div
+								id="hs-basic-with-title-and-arrow-stretched-collapse-five"
+								class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+								aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-five"
+							>
+								<p class="text-gray-800 dark:text-gray-200">
+									We obtain your prior consent and process all payments as ACH
+									from your bank account.
+								</p>
+							</div>
+						</div>
+
+						<div
+							class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
+							id="hs-basic-with-title-and-arrow-stretched-heading-six"
+						>
+							<button
+								class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
+								aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-six"
+							>
+								Can I pay using a credit card?
+								<svg
+									class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+								<svg
+									class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+							</button>
+							<div
+								id="hs-basic-with-title-and-arrow-stretched-collapse-six"
+								class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+								aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-six"
+							>
+								<p class="text-gray-800 dark:text-gray-200">
+									No, we don’t accept credit card payments to keep processing
+									costs down.
+								</p>
+							</div>
+						</div>
+						<div
+							class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/[.05]"
+							id="hs-basic-with-title-and-arrow-stretched-heading-six"
+						>
+							<button
+								class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-gray-800 transition hover:text-gray-500 dark:text-gray-200 dark:hover:text-gray-400"
+								aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-six"
+							>
+								What do I do if I have a question about my invoice?
+
+								<svg
+									class="hs-accordion-active:hidden block w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+								<svg
+									class="hs-accordion-active:block hidden w-3 h-3 text-gray-600 group-hover:text-gray-500 dark:text-gray-400"
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"></path>
+								</svg>
+							</button>
+							<div
+								id="hs-basic-with-title-and-arrow-stretched-collapse-six"
+								class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+								aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-six"
+							>
+								<p class="text-gray-800 dark:text-gray-200">
+									You would reach out to your account manager or open a ticket.
+									We will charge your account until any open questions are
+									resolved.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- End Accordion -->
+				</div>
+			</div>
+			<!-- End FAQ -->
+
+			<BannerFooterSection />
 		</div>
 	</main>
 </BaseLayout>
