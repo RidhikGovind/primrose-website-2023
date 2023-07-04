@@ -74,36 +74,39 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 
 					<!-- Grid -->
 					<div
-						class="mt-6 md:mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 lg:gap-3 xl:gap-6 lg:items-top"
+						class="mt-6 md:mt-12 grid sm:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-6 lg:gap-3 xl:gap-6 lg:items-top"
 					>
 						<!-- Card -->
 						<div
 							class="flex flex-col bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
 						>
-							<h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">
-								Essentials
-							</h4>
+							<div >
+								<h4
+									class="font-medium text-lg text-gray-800 dark:text-gray-200"
+								>
+									Basic
+								</h4>
 
-							<p class="mt-6 mb-3">
-								<!-- <span class="block">Fee</span> -->
-								<span
-									class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
-									>4%</span
-								><span class="block">of collections</span>
-							</p>
-							<p class="mt-2 text-sm text-gray-500">
-								Best for practices with low revenue
-							</p>
-							<a
-								class="mt-5 calendly-open-button inline-flex lg:text-base text-white justify-center items-center gap-2 bg-teal-700 border-teal-900 hover:bg-teal-800 font-medium hover:shadow-md focus:outline-none transition-all text-sm py-3 px-4 dark:text-white-500 dark:border-violet-900 dark:hover:border-violet-700"
-								onclick="openCalendlyWidget()"
-								href="#calendly"
-							>
-								Contact us
-							</a>
+								<p class="mt-6 mb-3">
+									<span
+										class="font-bold text-2xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+										>Free</span
+									>
+								</p>
+								<p class="mt-2 text-sm text-gray-500">
+									Best if you are just starting out or if you practice part time
+								</p>
+								<a
+									class="mt-5 calendly-open-button inline-flex lg:text-base text-white justify-center items-center gap-2 bg-teal-700 border-teal-900 hover:bg-teal-800 font-medium hover:shadow-md focus:outline-none transition-all text-sm py-3 px-4 dark:text-white-500 dark:border-violet-900 dark:hover:border-violet-700"
+									onclick="openCalendlyWidget()"
+									href="#calendly"
+								>
+									Contact us
+								</a>
+							</div>
 
 							<ul class="mt-7 space-y-2.5 text-sm">
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -121,7 +124,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 									>
 								</li>
 
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -139,7 +142,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 									</span>
 								</li>
 
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -156,7 +159,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										PM software
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -173,7 +176,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Dashboard software
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -190,7 +193,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Import - Demographics
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -207,7 +210,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Setup - EDI/ERA
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -224,7 +227,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Claims loading
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -241,7 +244,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Claims creation
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -258,7 +261,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Claims scrubbing
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -275,7 +278,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Claims filing
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -292,7 +295,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Remit posting
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -309,7 +312,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Patient - 2 statements
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -326,7 +329,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Insurance - Inbound & outbound calls
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -343,7 +346,299 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Manage receivable - 1 year
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
+									<svg
+										class="flex-shrink-0 h-5 w-5 text-violet-900"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+											fill="currentColor"></path>
+									</svg>
+									<span class="text-gray-800 dark:text-gray-400">
+										Appeals - Level 1
+									</span>
+								</li>
+							</ul>
+						</div>
+						<!-- End Card -->
+
+						<!-- Card -->
+						<div
+							class="flex flex-col bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
+						>
+							<div>
+								<h4
+									class="font-medium text-lg text-gray-800 dark:text-gray-200"
+								>
+									Essentials
+								</h4>
+
+								<p class="mt-6 mb-3">
+									<!-- <span class="block">Fee</span> -->
+									<span
+										class="font-bold text-2xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+										>4%</span
+									><span class="block">of collections</span>
+								</p>
+								<p class="mt-2 text-sm text-gray-500">
+									Best for practices with low revenue
+								</p>
+								<a
+									class="mt-5 calendly-open-button inline-flex lg:text-base text-white justify-center items-center gap-2 bg-teal-700 border-teal-900 hover:bg-teal-800 font-medium hover:shadow-md focus:outline-none transition-all text-sm py-3 px-4 dark:text-white-500 dark:border-violet-900 dark:hover:border-violet-700"
+									onclick="openCalendlyWidget()"
+									href="#calendly"
+								>
+									Contact us
+								</a>
+							</div>
+
+							<ul class="mt-7 space-y-2.5 text-sm">
+								<li class="flex space-x-2 text-left">
+									<svg
+										class="flex-shrink-0 h-5 w-5 text-violet-900"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+											fill="currentColor"></path>
+									</svg>
+									<span class="text-gray-800 dark:text-gray-400">
+										Implementation team</span
+									>
+								</li>
+
+								<li class="flex space-x-2 text-left">
+									<svg
+										class="flex-shrink-0 h-5 w-5 text-violet-900"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+											fill="currentColor"></path>
+									</svg>
+									<span class="text-gray-800 dark:text-gray-400">
+										iPhone app
+									</span>
+								</li>
+
+								<li class="flex space-x-2 text-left">
+									<svg
+										class="flex-shrink-0 h-5 w-5 text-violet-900"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+											fill="currentColor"></path>
+									</svg>
+									<span class="text-gray-800 dark:text-gray-400">
+										PM software
+									</span>
+								</li>
+								<li class="flex space-x-2 text-left">
+									<svg
+										class="flex-shrink-0 h-5 w-5 text-violet-900"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+											fill="currentColor"></path>
+									</svg>
+									<span class="text-gray-800 dark:text-gray-400">
+										Dashboard software
+									</span>
+								</li>
+								<li class="flex space-x-2 text-left">
+									<svg
+										class="flex-shrink-0 h-5 w-5 text-violet-900"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+											fill="currentColor"></path>
+									</svg>
+									<span class="text-gray-800 dark:text-gray-400">
+										Import - Demographics
+									</span>
+								</li>
+								<li class="flex space-x-2 text-left">
+									<svg
+										class="flex-shrink-0 h-5 w-5 text-violet-900"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+											fill="currentColor"></path>
+									</svg>
+									<span class="text-gray-800 dark:text-gray-400">
+										Setup - EDI/ERA
+									</span>
+								</li>
+								<li class="flex space-x-2 text-left">
+									<svg
+										class="flex-shrink-0 h-5 w-5 text-violet-900"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+											fill="currentColor"></path>
+									</svg>
+									<span class="text-gray-800 dark:text-gray-400">
+										Claims loading
+									</span>
+								</li>
+								<li class="flex space-x-2 text-left">
+									<svg
+										class="flex-shrink-0 h-5 w-5 text-violet-900"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+											fill="currentColor"></path>
+									</svg>
+									<span class="text-gray-800 dark:text-gray-400">
+										Claims creation
+									</span>
+								</li>
+								<li class="flex space-x-2 text-left">
+									<svg
+										class="flex-shrink-0 h-5 w-5 text-violet-900"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+											fill="currentColor"></path>
+									</svg>
+									<span class="text-gray-800 dark:text-gray-400">
+										Claims scrubbing
+									</span>
+								</li>
+								<li class="flex space-x-2 text-left">
+									<svg
+										class="flex-shrink-0 h-5 w-5 text-violet-900"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+											fill="currentColor"></path>
+									</svg>
+									<span class="text-gray-800 dark:text-gray-400">
+										Claims filing
+									</span>
+								</li>
+								<li class="flex space-x-2 text-left">
+									<svg
+										class="flex-shrink-0 h-5 w-5 text-violet-900"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+											fill="currentColor"></path>
+									</svg>
+									<span class="text-gray-800 dark:text-gray-400">
+										Remit posting
+									</span>
+								</li>
+								<li class="flex space-x-2 text-left">
+									<svg
+										class="flex-shrink-0 h-5 w-5 text-violet-900"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+											fill="currentColor"></path>
+									</svg>
+									<span class="text-gray-800 dark:text-gray-400">
+										Patient - 2 statements
+									</span>
+								</li>
+								<li class="flex space-x-2 text-left">
+									<svg
+										class="flex-shrink-0 h-5 w-5 text-violet-900"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+											fill="currentColor"></path>
+									</svg>
+									<span class="text-gray-800 dark:text-gray-400 text-left">
+										Insurance - Inbound & outbound calls
+									</span>
+								</li>
+								<li class="flex space-x-2 text-left">
+									<svg
+										class="flex-shrink-0 h-5 w-5 text-violet-900"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+											fill="currentColor"></path>
+									</svg>
+									<span class="text-gray-800 dark:text-gray-400">
+										Manage receivable - 1 year
+									</span>
+								</li>
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -375,7 +670,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 							<p class="mt-6 mb-3">
 								<!-- <span class="block">Fee</span> -->
 								<span
-									class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+									class="font-bold text-2xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
 									>5%</span
 								><span class="block">of collections</span>
 							</p>
@@ -391,13 +686,13 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 							</a>
 
 							<ul class="mt-7 space-y-2.5 text-sm">
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<span class="text-gray-800 dark:text-gray-400 font-semibold">
 										Everything in the Basic plan +
 									</span>
 								</li>
 
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -415,7 +710,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 									</span>
 								</li>
 
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -432,7 +727,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Setup - Address change
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -449,7 +744,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Reports- 2 custom reports (fees apply for addl reports)
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -467,7 +762,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										only)
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -484,7 +779,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Coding surgeries (for surgeries only)
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -501,7 +796,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Deposit processing
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -518,7 +813,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Bank reconciliation (done monthly)
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -535,7 +830,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Appeals - Level 2
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -552,7 +847,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Patient - 3 statements
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -569,7 +864,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Patient-balance reminder calls
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -586,7 +881,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Patient - Billing calls inbound
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -603,7 +898,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Dunning letters
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -636,7 +931,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 
 							<p class="mt-6 mb-3">
 								<span
-									class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+									class="font-bold text-2xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
 									>3%</span
 								><span class="block">of collections</span>
 							</p>
@@ -652,7 +947,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 							</a>
 
 							<ul class="mt-7 space-y-2.5 text-sm">
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -670,7 +965,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 									</span>
 								</li>
 
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -687,7 +982,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Accounting
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -704,7 +999,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Payroll
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -721,7 +1016,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Hiring
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -738,7 +1033,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Staff Mgmt
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -755,7 +1050,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Vendor Mgmt
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -772,7 +1067,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Patient estimates
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -789,7 +1084,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 										Check-in payment calls
 									</span>
 								</li>
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<svg
 										class="flex-shrink-0 h-5 w-5 text-violet-900"
 										width="16"
@@ -822,7 +1117,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 							<p class="mt-6 mb-3">
 								<!-- <span class="block">Fee</span> -->
 								<span
-									class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
+									class="font-bold text-2xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
 									>Variable</span
 								><span class="block">Fee</span>
 							</p>
@@ -838,7 +1133,7 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 							</a>
 
 							<ul class="mt-7 space-y-2.5 text-sm">
-								<li class="flex space-x-2">
+								<li class="flex space-x-2 text-left">
 									<span
 										class="text-gray-800 dark:text-gray-400 text-left text-normal font-semibold"
 									>
@@ -851,253 +1146,24 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 					</div>
 					<!-- End Grid -->
 				</div>
-			</div>
+			</div>x``
 			<!-- End Hero -->
 
-			<div
-				class="max-w-[85rem] flex flex-col items-center px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
-			>
+			<div class="max-w-[65rem] px-4 py-5 sm:px-6 lg:px-8 lg:py-14 mx-auto">
 				<!-- Title -->
-				<div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+				<div class="max-w-2xl mx-auto text-center py-12">
 					<h2
 						class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
 					>
-						Are you a startup clinic?
+						Upgrade with Premium Add-Ons
 					</h2>
-					<p class="mt-1 text-gray-600 dark:text-gray-400">
-						Let us help you get started. This is a one-of-a-kind service where
-						we bring together our various units to help you get up and running
-						during the first six months.
+					<p class="mt-3 text-gray-600 dark:text-gray-400">
+						Unlock the full potential of our services with our premium add-ons,
+						tailored to meet your unique needs and deliver exceptional value
 					</p>
 				</div>
 				<!-- End Title -->
 
-				<!-- Card -->
-				<div
-					class="flex flex-col w-2/5 bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
-				>
-					<h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">
-						Startup Plan
-					</h4>
-
-					<p class="mt-6 mb-3">
-						<!-- <span class="block">Fee</span> -->
-						<span
-							class="font-bold text-3xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
-							>5%</span
-						><span class="block">of collections</span>
-					</p>
-					<p class="mt-2 text-sm text-gray-500">
-						Applies to startup clinics for the first 6 months of service
-					</p>
-					<a
-						class="mt-5 calendly-open-button inline-flex lg:text-base text-white justify-center items-center gap-2 bg-teal-700 border-teal-900 hover:bg-teal-800 font-medium hover:shadow-md focus:outline-none transition-all text-sm py-3 px-4 dark:text-white-500 dark:border-violet-900 dark:hover:border-violet-700"
-						onclick="openCalendlyWidget()"
-						href="#calendly"
-					>
-						Contact us
-					</a>
-
-					<ul class="mt-7 space-y-2.5 text-sm">
-						<li class="flex space-x-2">
-							<svg
-								class="flex-shrink-0 h-5 w-5 text-violet-900"
-								width="16"
-								height="16"
-								viewBox="0 0 16 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-									fill="currentColor"></path>
-							</svg>
-							<span class="text-gray-800 dark:text-gray-400">
-								Website Design (FREE)</span
-							>
-						</li>
-
-						<li class="flex space-x-2">
-							<svg
-								class="flex-shrink-0 h-5 w-5 text-violet-900"
-								width="16"
-								height="16"
-								viewBox="0 0 16 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-									fill="currentColor"></path>
-							</svg>
-							<span class="text-gray-800 dark:text-gray-400">
-								Website hosting (FREE)</span
-							>
-						</li>
-
-						<li class="flex space-x-2">
-							<svg
-								class="flex-shrink-0 h-5 w-5 text-violet-900"
-								width="16"
-								height="16"
-								viewBox="0 0 16 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-									fill="currentColor"></path>
-							</svg>
-							<span class="text-gray-800 dark:text-gray-400">
-								Credentialing (top 15 payors)</span
-							>
-						</li>
-						<li class="flex space-x-2">
-							<svg
-								class="flex-shrink-0 h-5 w-5 text-violet-900"
-								width="16"
-								height="16"
-								viewBox="0 0 16 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-									fill="currentColor"></path>
-							</svg>
-							<span class="text-gray-800 dark:text-gray-400">
-								Sales lunches with PCPs (1-2 lunches/week)
-							</span>
-						</li>
-						<li class="flex space-x-2">
-							<svg
-								class="flex-shrink-0 h-5 w-5 text-violet-900"
-								width="16"
-								height="16"
-								viewBox="0 0 16 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-									fill="currentColor"></path>
-							</svg>
-							<span class="text-gray-800 dark:text-gray-400">
-								Digital marketing (advertising costs apply)
-							</span>
-						</li>
-						<li class="flex space-x-2">
-							<svg
-								class="flex-shrink-0 h-5 w-5 text-violet-900"
-								width="16"
-								height="16"
-								viewBox="0 0 16 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-									fill="currentColor"></path>
-							</svg>
-							<span class="text-gray-800 dark:text-gray-400">
-								Practice Management software (FREE)
-							</span>
-						</li>
-						<li class="flex space-x-2">
-							<svg
-								class="flex-shrink-0 h-5 w-5 text-violet-900"
-								width="16"
-								height="16"
-								viewBox="0 0 16 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-									fill="currentColor"></path>
-							</svg>
-							<span class="text-gray-800 dark:text-gray-400">
-								Phone system (first 3 months FREE)
-							</span>
-						</li>
-						<li class="flex space-x-2">
-							<svg
-								class="flex-shrink-0 h-5 w-5 text-violet-900"
-								width="16"
-								height="16"
-								viewBox="0 0 16 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-									fill="currentColor"></path>
-							</svg>
-							<span class="text-gray-800 dark:text-gray-400">
-								Medical Receptionist (40 hours for first 3 months)
-							</span>
-						</li>
-						<li class="flex space-x-2">
-							<svg
-								class="flex-shrink-0 h-5 w-5 text-violet-900"
-								width="16"
-								height="16"
-								viewBox="0 0 16 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-									fill="currentColor"></path>
-							</svg>
-							<span class="text-gray-800 dark:text-gray-400">
-								Billing (free first 6 months FREE)
-							</span>
-						</li>
-
-						<div class="flex flex-col gap-4 pt-4">
-							<hr class="solid" />
-
-							<li class="flex flex-col">
-								<span class="text-gray-800 dark:text-gray-400 font-semibold">
-									Support: Implementation Manager for 6 months
-								</span>
-								<span class="text-gray-800 dark:text-gray-400 font-semibold">
-									Meetings - Weekly for first 3 months; Biweekly 3-6 months
-								</span>
-							</li>
-
-							<hr class="solid" />
-
-							<li class="flex flex-col">
-								<span class="text-gray-800 dark:text-gray-400 font-semibold">
-									Minimum: Waived for 6 months
-								</span>
-								<span class="text-gray-800 dark:text-gray-400 font-semibold">
-									Term: 2-year commitment required
-								</span>
-							</li>
-						</div>
-					</ul>
-				</div>
-				<!-- End Card -->
-			</div>
-
-			<!-- Title -->
-			<div class="max-w-2xl mx-auto text-center">
-				<h2
-					class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
-				>
-					Upgrade with Premium Add-Ons
-				</h2>
-				<p class="mt-3 text-gray-600 dark:text-gray-400">
-					Unlock the full potential of our services with our premium add-ons,
-					tailored to meet your unique needs and deliver exceptional value
-				</p>
-			</div>
-			<!-- End Title -->
-
-			<div class="max-w-[65rem] px-4 py-5 sm:px-6 lg:px-8 lg:py-14 mx-auto">
 				<div class="flex flex-col">
 					<div class="-m-1.5 overflow-x-auto">
 						<div class="p-1.5 min-w-full inline-block align-middle">
@@ -1803,42 +1869,3 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 		</div>
 	</main>
 </BaseLayout>
-
-<!-- Calendly inline widget begin -->
-<div class="calendly-widget-overlay calendly-close-button">
-	<div
-		class="calendly-inline-widget"
-		style="min-width: 320px; height: 680px"
-		data-auto-load="false"
-	>
-		<h2 class="title is-size-5 calendly-widget-close">Close X</h2>
-		<script
-			type="text/javascript"
-			src="https://assets.calendly.com/assets/external/widget.js"
-		></script>
-		<script>
-			Calendly.initInlineWidget({
-				url: 'https://calendly.com/trillium-vineeth/25-min?hide_gdpr_banner=1',
-			});
-		</script>
-	</div>
-</div>
-<!-- Calendly inline widget end -->
-
-<script>
-	const calendlyCloseButton = document.querySelector('.calendly-close-button');
-
-	calendlyCloseButton.addEventListener('click', () => {
-		document.querySelector('.calendly-widget-overlay').style.display = 'none';
-	});
-
-	const calendlyOpenButton = document.querySelectorAll('.calendly-open-button');
-
-	// Handle clicks on each button.
-	calendlyOpenButton.forEach((button) => {
-		button.addEventListener('click', () => {
-			document.querySelector('.calendly-widget-overlay').style.display =
-				'block';
-		});
-	});
-</script>
