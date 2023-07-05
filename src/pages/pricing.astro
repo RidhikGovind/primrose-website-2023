@@ -11,36 +11,13 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 ></script>
 
 <style>
-	/* ------------ CALENDLY WIDGET STYLES ------------------- */
-	.calendly-widget-overlay {
-		position: fixed;
-		display: none;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: rgba(0, 0, 0, 0.5);
-		z-index: 9999;
-		cursor: pointer;
+	.pricingCard {
+		flex-basis: 1 1 auto;
 	}
 
-	.calendly-inline-widget {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		z-index: 9999;
-		/* display: none; */
-	}
-
-	.calendly-widget-close {
-		z-index: 999999;
-		padding: 2rem;
-		color: #fff;
-		position: absolute;
-		top: 0;
-		right: 0;
+	.pricingCard_mainContent {
+		min-height: 1120px !important;
+		/* border: 1px solid red; */
 	}
 </style>
 
@@ -49,15 +26,6 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 		<div class="container md:max-w-full">
 			<!-- Hero -->
 			<div class="relative bg-neutral-100">
-				<!-- Gradients -->
-				<!-- <div aria-hidden="true" class="flex absolute -top-48 left-0 -z-[1]">
-					<div
-						class="bg-teal-200 opacity-30 blur-3xl w-[1536px] h-[600px] dark:bg-teal-900 dark:opacity-20"
-					>
-					</div>
-				</div> -->
-				<!-- End Gradients -->
-
 				<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:pt-14 mx-auto">
 					<!-- Title -->
 					<div class="max-w-3xl mx-auto text-center mb-20">
@@ -78,1075 +46,1035 @@ import ButtonOutlined from '../components/ButtonOutlined.astro';
 					>
 						<!-- Card -->
 						<div
-							class="flex flex-col bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
+							class="pricingCard flex flex-col bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
 						>
-							<div >
-								<h4
-									class="font-medium text-lg text-gray-800 dark:text-gray-200"
-								>
-									Basic
-								</h4>
-
-								<p class="mt-6 mb-3">
-									<span
-										class="font-bold text-2xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
-										>Free</span
+							<div class="pricingCard_mainContent">
+								<div class="grid grid-rows-[30px_minmax(64px,_1fr)_62px_auto]">
+									<h4
+										class="font-medium text-lg text-gray-800 dark:text-gray-200"
 									>
-								</p>
-								<p class="mt-2 text-sm text-gray-500">
-									Best if you are just starting out or if you practice part time
-								</p>
-								<a
-									class="mt-5 calendly-open-button inline-flex lg:text-base text-white justify-center items-center gap-2 bg-teal-700 border-teal-900 hover:bg-teal-800 font-medium hover:shadow-md focus:outline-none transition-all text-sm py-3 px-4 dark:text-white-500 dark:border-violet-900 dark:hover:border-violet-700"
-									onclick="openCalendlyWidget()"
-									href="#calendly"
-								>
-									Contact us
-								</a>
+										Free Plan
+									</h4>
+
+									<p class="mt-6 mb-3" style="height: 64px;">
+										<span
+											class="font-bold text-2xl md:text-3xl xl:text-4xl text-gray-800 dark:text-gray-200"
+											>Free</span
+										>
+									</p>
+									<p class="mt-2 text-sm text-gray-500">
+										Best if you are just starting out or if you practice part
+										time
+									</p>
+									<a
+										class="mt-5 calendly-open-button inline-flex lg:text-base text-white justify-center items-center gap-2 bg-teal-700 border-teal-900 hover:bg-teal-800 font-medium hover:shadow-md focus:outline-none transition-all text-sm py-3 px-4 dark:text-white-500 dark:border-violet-900 dark:hover:border-violet-700"
+										onclick="openCalendlyWidget()"
+										href="#calendly"
+									>
+										Contact us
+									</a>
+								</div>
+
+								<ul class="mt-7 space-y-2.5 text-sm">
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											iPhone app
+										</span>
+									</li>
+
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											PM software
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											EMR integration
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Claims creation
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Claims scrubbing
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Claims printing
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Dashboard software
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Import Demographics
+										</span>
+									</li>
+								</ul>
 							</div>
 
-							<ul class="mt-7 space-y-2.5 text-sm">
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Implementation team</span
-									>
-								</li>
-
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										iPhone app
-									</span>
-								</li>
-
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										PM software
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Dashboard software
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Import - Demographics
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Setup - EDI/ERA
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Claims loading
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Claims creation
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Claims scrubbing
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Claims filing
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Remit posting
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Patient - 2 statements
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Insurance - Inbound & outbound calls
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Manage receivable - 1 year
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Appeals - Level 1
-									</span>
-								</li>
-							</ul>
-						</div>
-						<!-- End Card -->
-
-						<!-- Card -->
-						<div
-							class="flex flex-col bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
-						>
-							<div>
-								<h4
-									class="font-medium text-lg text-gray-800 dark:text-gray-200"
+							<div class="grid grid-cols-1 divide-y text-left">
+								<p
+									class="text-gray-800 py-4 dark:text-gray-400 border-t border-gray-300"
 								>
-									Essentials
-								</h4>
-
-								<p class="mt-6 mb-3">
-									<!-- <span class="block">Fee</span> -->
-									<span
-										class="font-bold text-2xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
-										>4%</span
-									><span class="block">of collections</span>
+									<span class="font-semibold">Support:</span>
+									<span class="block">Email 1 day TAT</span>
 								</p>
-								<p class="mt-2 text-sm text-gray-500">
-									Best for practices with low revenue
-								</p>
-								<a
-									class="mt-5 calendly-open-button inline-flex lg:text-base text-white justify-center items-center gap-2 bg-teal-700 border-teal-900 hover:bg-teal-800 font-medium hover:shadow-md focus:outline-none transition-all text-sm py-3 px-4 dark:text-white-500 dark:border-violet-900 dark:hover:border-violet-700"
-									onclick="openCalendlyWidget()"
-									href="#calendly"
+								<p
+									class="text-gray-800 py-4 dark:text-gray-400 border-t border-gray-300"
 								>
-									Contact us
-								</a>
+									<span class="font-semibold">Minimum:</span>
+									<span class="block">Not applicable</span>
+								</p>
 							</div>
-
-							<ul class="mt-7 space-y-2.5 text-sm">
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Implementation team</span
-									>
-								</li>
-
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										iPhone app
-									</span>
-								</li>
-
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										PM software
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Dashboard software
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Import - Demographics
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Setup - EDI/ERA
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Claims loading
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Claims creation
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Claims scrubbing
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Claims filing
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Remit posting
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Patient - 2 statements
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Insurance - Inbound & outbound calls
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Manage receivable - 1 year
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Appeals - Level 1
-									</span>
-								</li>
-							</ul>
 						</div>
 						<!-- End Card -->
 
 						<!-- Card -->
 						<div
-							class="flex flex-col bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
+							class="pricingCard flex flex-col bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
 						>
-							<h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">
-								Premium Plan
-							</h4>
+							<div class="pricingCard_mainContent">
+								<div class="grid grid-rows-[30px_minmax(64px,_1fr)_62px_auto]">
+									<h4
+										class="font-medium text-lg text-gray-800 dark:text-gray-200"
+									>
+										Insider Plan
+									</h4>
 
-							<p class="mt-6 mb-3">
-								<!-- <span class="block">Fee</span> -->
-								<span
-									class="font-bold text-2xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
-									>5%</span
-								><span class="block">of collections</span>
-							</p>
-							<p class="mt-2 text-sm text-gray-500">
-								Best for surgery/procedure-based specialists
-							</p>
-							<a
-								class="mt-5 calendly-open-button inline-flex lg:text-base text-white justify-center items-center gap-2 bg-teal-700 border-teal-900 hover:bg-teal-800 font-medium hover:shadow-md focus:outline-none transition-all text-sm py-3 px-4 dark:text-white-500 dark:border-violet-900 dark:hover:border-violet-700"
-								onclick="openCalendlyWidget()"
-								href="#calendly"
-							>
-								Contact us
-							</a>
+									<p class="mt-6 mb-3">
+										<!-- <span class="block">Fee</span> -->
+										<span
+											class="font-bold text-2xl md:text-3xl xl:text-4xl text-gray-800 dark:text-gray-200"
+											>1%</span
+										><span class="block">of collections*</span>
+									</p>
+									<p class="mt-2 text-sm text-gray-500">
+										Best if you are if you want to leverage our automation
+									</p>
+									<a
+										class="mt-5 calendly-open-button inline-flex lg:text-base text-white justify-center items-center gap-2 bg-teal-700 border-teal-900 hover:bg-teal-800 font-medium hover:shadow-md focus:outline-none transition-all text-sm py-3 px-4 dark:text-white-500 dark:border-violet-900 dark:hover:border-violet-700"
+										onclick="openCalendlyWidget()"
+										href="#calendly"
+									>
+										Contact us
+									</a>
+								</div>
 
-							<ul class="mt-7 space-y-2.5 text-sm">
-								<li class="flex space-x-2 text-left">
-									<span class="text-gray-800 dark:text-gray-400 font-semibold">
-										Everything in the Basic plan +
-									</span>
-								</li>
+								<ul class="mt-7 space-y-2.5 text-sm">
+									<li class="flex space-x-2 text-left">
+										<span
+											class="text-gray-800 dark:text-gray-400 font-semibold"
+										>
+											Everything in the Free plan +
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Appointment reminders</span
+										>
+									</li>
 
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Import - Old Receivable
-									</span>
-								</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Review requests
+										</span>
+									</li>
 
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Eligibility Verification
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Estimations Checkin
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Payment collection
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Automated Claim filing
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Automated Remit (ERA) posting
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Patient - 2 statements
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											SMS reminders
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="grid grid-cols-1 divide-y text-left">
+								<p
+									class="text-gray-800 py-4 dark:text-gray-400 border-t border-gray-300"
+								>
+									<span class="font-semibold">Support:</span>
+									<span class="block">Email 1 day TAT</span>
+								</p>
+								<p
+									class="text-gray-800 py-4 dark:text-gray-400 border-t border-gray-300"
+								>
+									<span class="font-semibold">Minimum:</span>
+									<span class="block">Not applicable</span>
+								</p>
+							</div>
+							<!-- End Card -->
+						</div>
+
+						<!-- Card -->
+						<div
+							class="pricingCard flex flex-col bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
+						>
+							<div class="pricingCard_mainContent">
+								<div class="grid grid-rows-[30px_minmax(64px,_1fr)_62px_auto]">
+									<h4
+										class="font-medium text-lg text-gray-800 dark:text-gray-200"
 									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Setup - Address change
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
+										Essentials Plan
+									</h4>
+
+									<p class="mt-6 mb-3">
+										<!-- <span class="block">Fee</span> -->
+										<span
+											class="font-bold text-2xl md:text-3xl xl:text-4xl text-gray-800 dark:text-gray-200"
+											>4%</span
+										><span class="block">of collections</span>
+									</p>
+									<p class="mt-2 text-sm text-gray-500">
+										Best for practices with low revenue
+									</p>
+									<a
+										class="mt-5 calendly-open-button inline-flex lg:text-base text-white justify-center items-center gap-2 bg-teal-700 border-teal-900 hover:bg-teal-800 font-medium hover:shadow-md focus:outline-none transition-all text-sm py-3 px-4 dark:text-white-500 dark:border-violet-900 dark:hover:border-violet-700"
+										onclick="openCalendlyWidget()"
+										href="#calendly"
 									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Reports- 2 custom reports (fees apply for addl reports)
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Prior Authorization (for tests, procedures, and surgeries
-										only)
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Coding surgeries (for surgeries only)
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Deposit processing
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Bank reconciliation (done monthly)
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Appeals - Level 2
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Patient - 3 statements
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Patient-balance reminder calls
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Patient - Billing calls inbound
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Dunning letters
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Monthly meeting (one meeting with account manager; will be
-										available through SMS/email/ ticketing systems outside this
-										monthly meeting)
-									</span>
-								</li>
-							</ul>
+										Contact us
+									</a>
+								</div>
+
+								<ul class="mt-7 space-y-2.5 text-sm">
+									<li class="flex space-x-2 text-left">
+										<span
+											class="text-gray-800 dark:text-gray-400 font-semibold"
+										>
+											Everything in the Insider plan +
+										</span>
+									</li>
+
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Implementation team
+										</span>
+									</li>
+
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Manual Remit posting
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Patient - outbound calls (issues with insurance, address)
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Insurance - Inbound & outbound calls
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Manage receivable-1 year
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Appeals - Level 1
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="grid grid-cols-1 divide-y text-left">
+								<p
+									class="text-gray-800 py-4 dark:text-gray-400 border-t border-gray-300"
+								>
+									<span class="font-semibold">Support:</span>
+									<span class="block">Email 1 day TAT</span>
+									<span class="block">Ticketing system</span>
+								</p>
+								<p
+									class="text-gray-800 py-4 dark:text-gray-400 border-t border-gray-300"
+								>
+									<span class="font-semibold">Client Revenue:</span>
+									<span class="block">Not applicable</span>
+									<span class="font-semibold">Minimum:</span>
+									<span class="block">$750/month</span>
+								</p>
+							</div>
 						</div>
 						<!-- End Card -->
 
 						<!-- Card -->
 						<div
-							class="flex flex-col bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
+							class="pricingCard flex flex-col bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
 						>
-							<h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">
-								Practice Mgmt Plan
-							</h4>
+							<div class="pricingCard_mainContent">
+								<div class="grid grid-rows-[30px_minmax(64px,_1fr)_62px_auto]">
+									<h4
+										class="font-medium text-lg text-gray-800 dark:text-gray-200"
+									>
+										Premium Plan
+									</h4>
 
-							<p class="mt-6 mb-3">
-								<span
-									class="font-bold text-2xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
-									>3%</span
-								><span class="block">of collections</span>
-							</p>
-							<p class="mt-2 text-sm text-gray-500">
-								Practices without a dedicated office manager
-							</p>
-							<a
-								class="mt-5 calendly-open-button inline-flex lg:text-base text-white justify-center items-center gap-2 bg-teal-700 border-teal-900 hover:bg-teal-800 font-medium hover:shadow-md focus:outline-none transition-all text-sm py-3 px-4 dark:text-white-500 dark:border-violet-900 dark:hover:border-violet-700"
-								onclick="openCalendlyWidget()"
-								href="#calendly"
-							>
-								Contact us
-							</a>
+									<p class="mt-6 mb-3">
+										<span
+											class="font-bold text-2xl md:text-3xl xl:text-4xl text-gray-800 dark:text-gray-200"
+											>5%</span
+										><span class="block">of collections</span>
+									</p>
+									<p class="mt-2 text-sm text-gray-500">
+										Best for surgery/procedure-based specialists
+									</p>
+									<a
+										class="mt-5 calendly-open-button inline-flex lg:text-base text-white justify-center items-center gap-2 bg-teal-700 border-teal-900 hover:bg-teal-800 font-medium hover:shadow-md focus:outline-none transition-all text-sm py-3 px-4 dark:text-white-500 dark:border-violet-900 dark:hover:border-violet-700"
+										onclick="openCalendlyWidget()"
+										href="#calendly"
+									>
+										Contact us
+									</a>
+								</div>
 
-							<ul class="mt-7 space-y-2.5 text-sm">
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Budgeting
-									</span>
-								</li>
+								<ul class="mt-7 space-y-2.5 text-sm">
+									<li class="flex space-x-2 text-left">
+										<span
+											class="text-gray-800 dark:text-gray-400 font-semibold"
+										>
+											Everything in the Essentials plan +
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Import - Old Receivable
+										</span>
+									</li>
 
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Accounting
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Setup - Address change
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Reports- 2 custom reports (fees apply for addl reports)
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Prior Authorization (for tests, procedures, and surgeries
+											only)
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Coding surgeries (for surgeries only)
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Deposit processing Bank reconciliation (done monthly)
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Appeals - Level 2
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Patient - 3 statements
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Patient-balance reminder calls
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Patient - Billing calls inbound
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Dunning letters Monthly meeting (one meeting with account
+											manager; will be available through SMS/email/ ticketing
+											systems outside this monthly meeting)
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="grid grid-cols-1 divide-y text-left">
+								<p
+									class="text-gray-800 py-4 dark:text-gray-400 border-t border-gray-300"
+								>
+									<span class="font-semibold">Support:</span>
+									<span class="block"
+										>Account Manager (up to 4 hours/month)
 									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Payroll
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Hiring
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Staff Mgmt
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Vendor Mgmt
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Patient estimates
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400">
-										Check-in payment calls
-									</span>
-								</li>
-								<li class="flex space-x-2 text-left">
-									<svg
-										class="flex-shrink-0 h-5 w-5 text-violet-900"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
-											fill="currentColor"></path>
-									</svg>
-									<span class="text-gray-800 dark:text-gray-400 text-left">
-										Shared Practice Manager (meet with your account manager as
-										needed; Google meet/phone/ SMS/email)
-									</span>
-								</li>
-							</ul>
+								</p>
+								<p
+									class="text-gray-800 py-4 dark:text-gray-400 border-t border-gray-300"
+								>
+									<span class="font-semibold">Client Revenue:</span>
+									<span class="block">$50K+/m</span>
+									<span class="font-semibold">Minimum:</span>
+									<span class="block">$2,500/month</span>
+								</p>
+							</div>
+							<!-- End Card -->
 						</div>
-						<!-- End Card -->
+						<!-- End Grid -->
 
 						<!-- Card -->
 						<div
-							class="flex flex-col bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
+							class="pricingCard flex flex-col bg-white border border-gray-200 text-center rounded-2xl p-4 md:p-8 dark:bg-slate-900 dark:border-gray-700"
 						>
-							<h4 class="font-medium text-lg text-gray-800 dark:text-gray-200">
-								Enterprise Plan
-							</h4>
-
-							<p class="mt-6 mb-3">
-								<!-- <span class="block">Fee</span> -->
-								<span
-									class="font-bold text-2xl md:text-4xl xl:text-5xl text-gray-800 dark:text-gray-200"
-									>Variable</span
-								><span class="block">Fee</span>
-							</p>
-							<p class="mt-2 text-sm text-gray-500">
-								Custom plan best for larger groups
-							</p>
-							<a
-								class="mt-5 calendly-open-button inline-flex lg:text-base text-white justify-center items-center gap-2 bg-teal-700 border-teal-900 hover:bg-teal-800 font-medium hover:shadow-md focus:outline-none transition-all text-sm py-3 px-4 dark:text-white-500 dark:border-violet-900 dark:hover:border-violet-700"
-								onclick="openCalendlyWidget()"
-								href="#calendly"
-							>
-								Contact us
-							</a>
-
-							<ul class="mt-7 space-y-2.5 text-sm">
-								<li class="flex space-x-2 text-left">
-									<span
-										class="text-gray-800 dark:text-gray-400 text-left text-normal font-semibold"
+							<div class="pricingCard_mainContent">
+								<div class="grid grid-rows-[30px_minmax(64px,_1fr)_62px_auto]">
+									<h4
+										class="font-medium text-lg text-gray-800 dark:text-gray-200"
 									>
-										Schedule a 1:1 meeting to go over your custom requirements
+										Pract Mgmt Plan
+									</h4>
+
+									<p class="mt-6 mb-3">
+										<span
+											class="font-bold text-2xl md:text-3xl xl:text-4xl text-gray-800 dark:text-gray-200"
+											>3%</span
+										><span class="block">of collections</span>
+									</p>
+									<p class="mt-2 text-sm text-gray-500">
+										Practices without a dedicated office manager
+									</p>
+									<a
+										class="mt-5 calendly-open-button inline-flex lg:text-base text-white justify-center items-center gap-2 bg-teal-700 border-teal-900 hover:bg-teal-800 font-medium hover:shadow-md focus:outline-none transition-all text-sm py-3 px-4 dark:text-white-500 dark:border-violet-900 dark:hover:border-violet-700"
+										onclick="openCalendlyWidget()"
+										href="#calendly"
+									>
+										Contact us
+									</a>
+								</div>
+
+								<ul class="mt-7 space-y-2.5 text-sm">
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Budgeting
+										</span>
+									</li>
+
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Accounting
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Payroll
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Hiring
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Staff Mgmt
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Vendor Mgmt
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Patient estimates
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400">
+											Check-in payment calls
+										</span>
+									</li>
+									<li class="flex space-x-2 text-left">
+										<svg
+											class="flex-shrink-0 h-5 w-5 text-violet-900"
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M11.5219 4.0949C11.7604 3.81436 12.181 3.78025 12.4617 4.01871C12.7422 4.25717 12.7763 4.6779 12.5378 4.95844L6.87116 11.6251C6.62896 11.91 6.1998 11.94 5.9203 11.6916L2.9203 9.02494C2.64511 8.78033 2.62032 8.35894 2.86493 8.08375C3.10955 7.80856 3.53092 7.78378 3.80611 8.02839L6.29667 10.2423L11.5219 4.0949Z"
+												fill="currentColor"></path>
+										</svg>
+										<span class="text-gray-800 dark:text-gray-400 text-left">
+											Shared Practice Manager (meet with your account manager as
+											needed; Google meet/phone/ SMS/email)
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="grid grid-cols-1 divide-y text-left">
+								<p
+									class="text-gray-800 py-4 dark:text-gray-400 border-t border-gray-300"
+								>
+									<span class="font-semibold">Support:</span>
+									<span class="block"
+										>Practice Manager (up to 8 hours/week)
 									</span>
-								</li>
-							</ul>
+								</p>
+								<p
+									class="text-gray-800 py-4 dark:text-gray-400 border-t border-gray-300"
+								>
+									<span class="font-semibold">Client Revenue:</span>
+									<span class="block">$50K+/m</span>
+									<span class="font-semibold">Minimum:</span>
+									<span class="block">$2,500/month</span>
+								</p>
+							</div>
 						</div>
-						<!-- End Card -->
 					</div>
-					<!-- End Grid -->
+					<!-- End Card -->
 				</div>
-			</div>x``
+			</div>
 			<!-- End Hero -->
 
 			<div class="max-w-[65rem] px-4 py-5 sm:px-6 lg:px-8 lg:py-14 mx-auto">
