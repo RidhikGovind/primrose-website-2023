@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BannerFooterSection from '../components/BannerFooterSection.astro';
 import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
+import SupportBannerWithList from '../components/SupportBannerWithList.astro';
 ---
 
 <BaseLayout title="Coding & Authorizations | Primrose.health">
@@ -291,32 +292,6 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 							<!-- End Col -->
 						</div>
 						<!-- End Features Grid -->
-
-						<div
-							class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
-						>
-							<!-- Title -->
-							<div class="mx-auto max-w-2xl text-center pb-8">
-								<h2
-									class="text-3xl lg:text-4xl text-gray-800 font-bold dark:text-gray-200 px-8 pt-8"
-								>
-									The Primrose workflow
-								</h2>
-								<p
-									class="text-center text-gray-800 dark:text-gray-200 px-8 pt-4"
-								>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
-									eiusmod tempor incididunt ut labore et dolore magna aliqua.
-								</p>
-							</div>
-							<!-- End Title -->
-
-							<div class="grid md:grid-cols-2 gap-8 grid-row-2">
-								<img src="/images/workflow-traditional-way.png" alt="" />
-								<img src="/images/workflow-primrose-way.png" alt="" />
-							</div>
-						</div>
-
 						<!-- Testimonials -->
 						<div
 							class="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-[#925034]"
@@ -368,14 +343,39 @@ import SupportBannerWithPic from '../components/SupportBannerWithPic.astro';
 							<!-- End Blockquote -->
 						</div>
 						<!-- End Testimonials -->
+
+						<div
+							class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
+						>
+							<!-- Title -->
+							<div class="mx-auto max-w-2xl text-center pb-8">
+								<h2
+									class="text-3xl lg:text-4xl text-gray-800 font-bold dark:text-gray-200 px-8 pt-8"
+								>
+									The Primrose workflow
+								</h2>
+								<p
+									class="text-center text-gray-800 dark:text-gray-200 px-8 pt-4"
+								>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do
+									eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+							<!-- End Title -->
+
+							<div class="grid md:grid-cols-2 gap-8 grid-row-2">
+								<img src="/images/workflow-traditional-way.png" alt="" />
+								<img src="/images/workflow-primrose-way.png" alt="" />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<!-- End Features -->
 
-			<SupportBannerWithPic />
+			<!-- <SupportBannerWithPic /> -->
+			<SupportBannerWithList />
 
-			
 			<BannerFooterSection />
 		</div>
 	</main>
